@@ -1,0 +1,27 @@
+html,body{height:100%; width:100%; overflow:hidden; margin:0;
+    padding:0;}
+.site-wrapper{
+    background: radial-gradient(#2b2b2b, #0d0d0d);
+    height: 100%;
+}
+.jumbotron{
+    background-color: rgba(0, 0, 0, 0);
+}
+.jumbotron h1{
+    color: floralwhite;
+    text-align:center;
+}
+.jumbotron p{
+    color: floralwhite;
+    text-align: center;
+}
+#info p{
+    text-align: center;
+    color: #a6a6a6;
+}
+.jumbotron label{
+    color: floralwhite;
+}
+.form-group label{
+    color: floralwhite;
+}
