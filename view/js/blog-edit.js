@@ -2,7 +2,7 @@ $(function () {
     p = $(".doc").attr("id");
     $.ajax({
         type: "GET",
-        url: "http://localhost:4010/blog/open",
+        url: "blog/open",
         dataType: "json",
         data:{
             "id":p,

@@ -2,7 +2,7 @@ $(function () {
     // 验证用户登录情况
     $.ajax({
         type: "POST",
-        url: "http://localhost:4010/asd/check",
+        url: "/asd/check",
         dataType: "json",
         success: function (data) {
             console.log(data);

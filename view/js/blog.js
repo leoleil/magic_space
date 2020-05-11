@@ -2,7 +2,7 @@ $(function () {
     p = $(".p").attr("id");
     $.ajax({
         type: "GET",
-        url: "http://localhost:4010/blog/list",
+        url: "/blog/list",
         dataType: "json",
         data:{
             "page":p,

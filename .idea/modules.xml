@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/../magic_space_asd/.idea/magic_space_asd.iml" filepath="$PROJECT_DIR$/../magic_space_asd/.idea/magic_space_asd.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/magic_space.iml" filepath="$PROJECT_DIR$/.idea/magic_space.iml" />
     </modules>
   </component>
 </project>

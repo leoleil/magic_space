@@ -2,7 +2,7 @@ $(".login-submit").click(function () {
     username = $(".username").val();
     password = $(".password").val();
     $.ajax({type: "POST",
-        url: "http://localhost:4010/asd/login",
+        url: "/asd/login",
         dataType: "json",
         data: {
             "username": username,
@@ -21,7 +21,7 @@ $(".signin-submit").click(function () {
     password = $(".password").val();
     mail = $(".email").val();
     $.ajax({type: "POST",
-        url: "http://localhost:4010/asd/sign",
+        url: "/asd/sign",
         dataType: "json",
         data: {
             "username": username,
@@ -42,7 +42,7 @@ function login(){
     username = $(".username").val();
     password = $(".password").val();
     $.ajax({type: "POST",
-        url: "http://localhost:4010/asd/login",
+        url: "/asd/login",
         dataType: "json",
         data: {
             "username": username,
