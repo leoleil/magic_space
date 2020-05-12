@@ -2,7 +2,7 @@ $(function () {
     p = $(".doc").attr("id");
     $.ajax({
         type: "GET",
-        url: "blog/open",
+        url: "/blog/open",
         dataType: "json",
         data:{
             "id":p,
@@ -16,7 +16,7 @@ $(function () {
                     p = $(".doc").attr("id");
                     $.ajax({
                         type: "POST",
-                        url: "http://localhost:4010/blog/delete",
+                        url: "/blog/delete",
                         dataType: "json",
                         data:{
                             "id":p,

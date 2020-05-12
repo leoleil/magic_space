@@ -3,9 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="f11f8579-7f87-4c31-a9c5-5bcf154ce9bf" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/utilities/utilties.go" beforeDir="false" afterPath="$PROJECT_DIR$/common/utilities/utilties.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller/asd/asd.go" beforeDir="false" afterPath="$PROJECT_DIR$/controller/asd/asd.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/js/sign-in.js" beforeDir="false" afterPath="$PROJECT_DIR$/view/js/sign-in.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/js/blog-edit.js" beforeDir="false" afterPath="$PROJECT_DIR$/view/js/blog-edit.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,41 +67,42 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="fix&lt;js&gt;:add ajax path" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix&lt;js&gt;:add ajax path" />
+    <MESSAGE value="fix&lt;js&gt;:set cookie" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix&lt;js&gt;:set cookie" />
   </component>
   <component name="WindowStateProjectService">
     <state x="233" y="3" key="#GOROOT" timestamp="1589170473589">
       <screen x="0" y="0" width="1280" height="688" />
     </state>
     <state x="233" y="3" key="#GOROOT/0.0.1280.688@0.0.1280.688" timestamp="1589170473589" />
-    <state x="250" y="0" key="CommitChangelistDialog2" timestamp="1589170632759">
+    <state x="250" y="0" key="CommitChangelistDialog2" timestamp="1589255347097">
       <screen x="0" y="0" width="1280" height="688" />
     </state>
-    <state x="250" y="0" key="CommitChangelistDialog2/0.0.1280.688@0.0.1280.688" timestamp="1589170632759" />
-    <state width="618" height="166" key="GridCell.Tab.0.bottom" timestamp="1589255236531">
+    <state x="250" y="0" key="CommitChangelistDialog2/0.0.1280.688@0.0.1280.688" timestamp="1589255347097" />
+    <state width="618" height="166" key="GridCell.Tab.0.bottom" timestamp="1589255777069">
       <screen x="0" y="0" width="1280" height="688" />
     </state>
-    <state width="618" height="166" key="GridCell.Tab.0.bottom/0.0.1280.688@0.0.1280.688" timestamp="1589255236531" />
-    <state width="618" height="166" key="GridCell.Tab.0.center" timestamp="1589255236531">
+    <state width="618" height="166" key="GridCell.Tab.0.bottom/0.0.1280.688@0.0.1280.688" timestamp="1589255777069" />
+    <state width="618" height="166" key="GridCell.Tab.0.center" timestamp="1589255777069">
       <screen x="0" y="0" width="1280" height="688" />
     </state>
-    <state width="618" height="166" key="GridCell.Tab.0.center/0.0.1280.688@0.0.1280.688" timestamp="1589255236531" />
-    <state width="618" height="166" key="GridCell.Tab.0.left" timestamp="1589255236531">
+    <state width="618" height="166" key="GridCell.Tab.0.center/0.0.1280.688@0.0.1280.688" timestamp="1589255777069" />
+    <state width="618" height="166" key="GridCell.Tab.0.left" timestamp="1589255777069">
       <screen x="0" y="0" width="1280" height="688" />
     </state>
-    <state width="618" height="166" key="GridCell.Tab.0.left/0.0.1280.688@0.0.1280.688" timestamp="1589255236531" />
-    <state width="618" height="166" key="GridCell.Tab.0.right" timestamp="1589255236531">
+    <state width="618" height="166" key="GridCell.Tab.0.left/0.0.1280.688@0.0.1280.688" timestamp="1589255777069" />
+    <state width="618" height="166" key="GridCell.Tab.0.right" timestamp="1589255777069">
       <screen x="0" y="0" width="1280" height="688" />
     </state>
-    <state width="618" height="166" key="GridCell.Tab.0.right/0.0.1280.688@0.0.1280.688" timestamp="1589255236531" />
-    <state x="233" y="78" key="Vcs.Push.Dialog.v2" timestamp="1589170774923">
+    <state width="618" height="166" key="GridCell.Tab.0.right/0.0.1280.688@0.0.1280.688" timestamp="1589255777069" />
+    <state x="233" y="78" key="Vcs.Push.Dialog.v2" timestamp="1589255354334">
       <screen x="0" y="0" width="1280" height="688" />
     </state>
-    <state x="233" y="78" key="Vcs.Push.Dialog.v2/0.0.1280.688@0.0.1280.688" timestamp="1589170774923" />
-    <state x="437" y="262" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1589170581713">
+    <state x="233" y="78" key="Vcs.Push.Dialog.v2/0.0.1280.688@0.0.1280.688" timestamp="1589255354334" />
+    <state x="437" y="262" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1589271581264">
       <screen x="0" y="0" width="1280" height="688" />
     </state>
-    <state x="437" y="262" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1280.688@0.0.1280.688" timestamp="1589170581713" />
+    <state x="437" y="262" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1280.688@0.0.1280.688" timestamp="1589271581264" />
     <state x="354" y="136" key="git4idea.merge.GitPullDialog" timestamp="1589170764255">
       <screen x="0" y="0" width="1280" height="688" />
     </state>
