@@ -11,17 +11,17 @@ import (
 func init() {
 	config.AppHandle.GetConf()
 }
-func main()  {
+func main() {
 	router := gin.Default()
 	router.Static("/assets", "./view")
 	router.StaticFile("/favicon.ico", "./view/image/favicon.ico")
 	router.LoadHTMLGlob("templates/*")
-	router.GET("/index",index.LoadIndex)
-	router.GET("/join",index.LoadSignIn)
-	router.GET("/blog",index.LoadBlog)
-	router.GET("/blog/view",index.LoadBlogView)
-	router.GET("/blog/doc",index.LoadBlogDoc)
-	router.GET("/blog/edit",index.LoadBlogEdit)
+	router.GET("/index", index.LoadIndex)
+	router.GET("/join", index.LoadSignIn)
+	router.GET("/blog", index.LoadBlog)
+	router.GET("/blog/view", index.LoadBlogView)
+	router.GET("/blog/doc", index.LoadBlogDoc)
+	router.GET("/blog/edit", index.LoadBlogEdit)
 	user := router.Group("/asd")
 	{
 		user.POST("/login", asd.Login)
@@ -35,6 +35,9 @@ func main()  {
 		blog.POST("/update", cblog.UpdateBlog)
 		blog.POST("/delete", cblog.DeleteBlog)
 		blog.GET("/open", cblog.OpenBlog)
+		blog.POST("/img/upload", cblog.LoadImg)
+		blog.POST("/img/delete", cblog.DeleteImg)
 	}
+
 	router.Run(":4010")
 }

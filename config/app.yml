@@ -1,6 +1,6 @@
 mysql:
   user: root
-  pwd:
-  host: 127.0.0.1
+  pwd: root
+  host: 47.94.87.121
   port: 3306
   dbname: magic_space
