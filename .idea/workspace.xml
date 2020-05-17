@@ -1,20 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f11f8579-7f87-4c31-a9c5-5bcf154ce9bf" name="Default Changelist" comment="feat&lt;index&gt;:add tinymce">
-      <change afterPath="$PROJECT_DIR$/module/img/img.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/simg/simg.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/view/img.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/view/js/tiny.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/view/js/tinymce/langs/zh_CN.js" afterDir="false" />
+    <list default="true" id="f11f8579-7f87-4c31-a9c5-5bcf154ce9bf" name="Default Changelist" comment="fix&lt;blog&gt;:fix the bug of opening blog">
+      <change afterPath="$PROJECT_DIR$/controller/cvideo/cvideo.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/svideo/svideo.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/video-open.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/video.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/view/css/video.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/view/js/video.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/view/video-upload.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/view/video7.4.1/css/video-js.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/view/video7.4.1/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/view/video7.4.1/jquery插件库.url" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/view/video7.4.1/js/video.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/view/video7.4.1/m.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/view/video7.4.1/www.jq22.com.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/config/config.go" beforeDir="false" afterPath="$PROJECT_DIR$/common/config/config.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/app.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller/cblog/cblog.go" beforeDir="false" afterPath="$PROJECT_DIR$/controller/cblog/cblog.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controller/index/index.go" beforeDir="false" afterPath="$PROJECT_DIR$/controller/index/index.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/blog-doc.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/blog-doc.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/blog-edit.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/blog-edit.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/js/blog-edit.js" beforeDir="false" afterPath="$PROJECT_DIR$/view/js/blog-edit.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/blog-view.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/blog-view.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/blog.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/blog.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/sign-in.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/sign-in.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,9 +35,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Go File" />
-        <option value="HTML File" />
         <option value="JavaScript File" />
+        <option value="HTML File" />
+        <option value="Go File" />
       </list>
     </option>
   </component>
@@ -49,7 +60,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="go.import.settings.migrated" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/view/js/tinymce/langs" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/view" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -58,7 +69,11 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\leoleil\go\src\magic_space\templates" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\leoleil\go\src\magic_space\view" />
       <recent name="C:\Users\leoleil\go\src\magic_space\view\js\tinymce\langs" />
       <recent name="C:\Users\leoleil\go\src\magic_space\view\js" />
     </key>
@@ -100,37 +115,39 @@
     <MESSAGE value="fix&lt;js&gt;:edit url" />
     <MESSAGE value="feat&lt;index&gt;:add github url" />
     <MESSAGE value="feat&lt;index&gt;:add tinymce" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat&lt;index&gt;:add tinymce" />
+    <MESSAGE value="feat&lt;*&gt;:suppose loading image" />
+    <MESSAGE value="fix&lt;blog&gt;:fix the bug of opening blog" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix&lt;blog&gt;:fix the bug of opening blog" />
   </component>
   <component name="WindowStateProjectService">
     <state x="233" y="3" key="#GOROOT" timestamp="1589170473589">
       <screen x="0" y="0" width="1280" height="688" />
     </state>
     <state x="233" y="3" key="#GOROOT/0.0.1280.688@0.0.1280.688" timestamp="1589170473589" />
-    <state x="250" y="0" key="CommitChangelistDialog2" timestamp="1589420038406">
+    <state x="250" y="0" key="CommitChangelistDialog2" timestamp="1589540237856">
       <screen x="0" y="0" width="1280" height="688" />
     </state>
-    <state x="250" y="0" key="CommitChangelistDialog2/0.0.1280.688@0.0.1280.688" timestamp="1589420038406" />
-    <state width="722" height="166" key="GridCell.Tab.0.bottom" timestamp="1589537108850">
+    <state x="250" y="0" key="CommitChangelistDialog2/0.0.1280.688@0.0.1280.688" timestamp="1589540237856" />
+    <state width="1237" height="166" key="GridCell.Tab.0.bottom" timestamp="1589704096812">
       <screen x="0" y="0" width="1280" height="688" />
     </state>
-    <state width="722" height="166" key="GridCell.Tab.0.bottom/0.0.1280.688@0.0.1280.688" timestamp="1589537108850" />
-    <state width="722" height="166" key="GridCell.Tab.0.center" timestamp="1589537108849">
+    <state width="1237" height="166" key="GridCell.Tab.0.bottom/0.0.1280.688@0.0.1280.688" timestamp="1589704096812" />
+    <state width="1237" height="166" key="GridCell.Tab.0.center" timestamp="1589704096808">
       <screen x="0" y="0" width="1280" height="688" />
     </state>
-    <state width="722" height="166" key="GridCell.Tab.0.center/0.0.1280.688@0.0.1280.688" timestamp="1589537108849" />
-    <state width="722" height="166" key="GridCell.Tab.0.left" timestamp="1589537108849">
+    <state width="1237" height="166" key="GridCell.Tab.0.center/0.0.1280.688@0.0.1280.688" timestamp="1589704096808" />
+    <state width="1237" height="166" key="GridCell.Tab.0.left" timestamp="1589704096807">
       <screen x="0" y="0" width="1280" height="688" />
     </state>
-    <state width="722" height="166" key="GridCell.Tab.0.left/0.0.1280.688@0.0.1280.688" timestamp="1589537108849" />
-    <state width="722" height="166" key="GridCell.Tab.0.right" timestamp="1589537108850">
+    <state width="1237" height="166" key="GridCell.Tab.0.left/0.0.1280.688@0.0.1280.688" timestamp="1589704096807" />
+    <state width="1237" height="166" key="GridCell.Tab.0.right" timestamp="1589704096810">
       <screen x="0" y="0" width="1280" height="688" />
     </state>
-    <state width="722" height="166" key="GridCell.Tab.0.right/0.0.1280.688@0.0.1280.688" timestamp="1589537108850" />
-    <state x="233" y="78" key="Vcs.Push.Dialog.v2" timestamp="1589420055619">
+    <state width="1237" height="166" key="GridCell.Tab.0.right/0.0.1280.688@0.0.1280.688" timestamp="1589704096810" />
+    <state x="233" y="78" key="Vcs.Push.Dialog.v2" timestamp="1589538236875">
       <screen x="0" y="0" width="1280" height="688" />
     </state>
-    <state x="233" y="78" key="Vcs.Push.Dialog.v2/0.0.1280.688@0.0.1280.688" timestamp="1589420055619" />
+    <state x="233" y="78" key="Vcs.Push.Dialog.v2/0.0.1280.688@0.0.1280.688" timestamp="1589538236875" />
     <state x="437" y="262" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1589419970086">
       <screen x="0" y="0" width="1280" height="688" />
     </state>

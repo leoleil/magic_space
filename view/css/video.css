@@ -1,0 +1,12 @@
+@media(min-width:992px){
+    #video{
+        width: 959px;
+        height: 400px;
+    }
+}
+@media(max-width:768px){
+    #video{
+        width: 368px;
+        height: 240px;
+    }
+}

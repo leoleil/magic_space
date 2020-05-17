@@ -4,3 +4,5 @@ mysql:
   host: 47.94.87.121
   port: 3306
   dbname: magic_space
+video:
+  path: /usr/local/nginx/html/video

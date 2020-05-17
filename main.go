@@ -5,6 +5,7 @@ import (
 	"magic_space/common/config"
 	"magic_space/controller/asd"
 	"magic_space/controller/cblog"
+	"magic_space/controller/cvideo"
 	"magic_space/controller/index"
 )
 
@@ -22,6 +23,8 @@ func main() {
 	router.GET("/blog/view", index.LoadBlogView)
 	router.GET("/blog/doc", index.LoadBlogDoc)
 	router.GET("/blog/edit", index.LoadBlogEdit)
+	router.GET("/video", index.LoadVideo)
+	router.GET("/video/open", index.LoadVideoOpen)
 	user := router.Group("/asd")
 	{
 		user.POST("/login", asd.Login)
@@ -38,6 +41,9 @@ func main() {
 		blog.POST("/img/upload", cblog.LoadImg)
 		blog.POST("/img/delete", cblog.DeleteImg)
 	}
-
+	video := router.Group("/video")
+	{
+		video.GET("/list", cvideo.GetVideoList)
+	}
 	router.Run(":4010")
 }
