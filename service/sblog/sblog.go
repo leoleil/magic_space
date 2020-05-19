@@ -27,7 +27,11 @@ func GetBlogListByPage(page, limit int64) (b []blog.BlogEntity, pageNum, endPage
 	if err != nil {
 		return
 	}
-	endPageNum = n/limit + 1
+	if n%limit != 0 {
+		endPageNum = n/limit + 1
+	} else {
+		endPageNum = n / limit
+	}
 	b, err = blog.SelectBlogListByPage(page, limit)
 	if err != nil {
 		return
