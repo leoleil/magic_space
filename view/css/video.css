@@ -10,3 +10,9 @@
         height: 240px;
     }
 }
+@media(min-width:992px){
+    #video-list{
+        height: 500px;
+        overflow-y: auto;
+    }
+}
