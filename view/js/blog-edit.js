@@ -36,9 +36,8 @@ $(function () {
             tinymce.init({
                 selector: "#mytextarea",
                 skin: 'oxide-dark',
-                height: 400,
                 language:'zh_CN',
-                plugins: 'image,lists,advlist',
+                plugins: 'image,lists,advlist,autoresize',
                 toolbar: 'undo redo fontsizeselect forecolor bold italic | alignleft aligncenter alignright | bullist numlist | image',
                 images_upload_handler: function (blobInfo, succFun, failFun) {
                     var xhr, formData;
