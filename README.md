@@ -1,4 +1,5 @@
 # MC-SPACE
-This is a pesonal blog system base on golang
-这是一款用 golang + boostrap 搭建的个人博客系统 兼容移动端
-系统搭载地址是：http://47.94.87.121:4010/index
+
+## Introduction 简介 
+#### This is a pesonal blog system base on golang. Compatible with mobile and PC.
+#### 这是一款基于golang 打造的个人博客系统。兼容移动端和PC端
