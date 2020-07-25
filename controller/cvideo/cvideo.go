@@ -26,5 +26,7 @@ func GetVideoList(context *gin.Context) {
 		"list": videoList,
 	})
 	return
+}
+func UploadVideo(context *gin.Context) {
 
 }
