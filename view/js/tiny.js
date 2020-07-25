@@ -1,10 +1,9 @@
 tinymce.init({
     selector: "#mytextarea",
     skin: 'oxide-dark',
-    height: 400,
     language:'zh_CN',
     plugins: 'image,lists,advlist,autoresize,emoticons,table',
-    toolbar: 'undo redo | styleselect formatselect fontsizeselect fontselect forecolor bold italic | alignleft aligncenter alignright | bullist numlist | image | emoticons | table',
+    toolbar: 'undo redo | formatselect fontsizeselect forecolor bold italic | alignleft aligncenter alignright | bullist numlist | image | emoticons | table',
     images_upload_handler: function (blobInfo, succFun, failFun) {
         var xhr, formData;
         var file = blobInfo.blob();//转化为易于理解的file对象

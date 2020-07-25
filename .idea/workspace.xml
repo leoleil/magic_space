@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="f11f8579-7f87-4c31-a9c5-5bcf154ce9bf" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller/cvideo/cvideo.go" beforeDir="false" afterPath="$PROJECT_DIR$/controller/cvideo/cvideo.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/view/js/tiny.js" beforeDir="false" afterPath="$PROJECT_DIR$/view/js/tiny.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -121,30 +120,30 @@
       <screen x="0" y="0" width="1280" height="688" />
     </state>
     <state x="233" y="3" key="#GOROOT/0.0.1280.688@0.0.1280.688" timestamp="1589170473589" />
-    <state x="250" y="0" key="CommitChangelistDialog2" timestamp="1595693239425">
+    <state x="250" y="0" key="CommitChangelistDialog2" timestamp="1595693251672">
       <screen x="0" y="0" width="1280" height="688" />
     </state>
-    <state x="250" y="0" key="CommitChangelistDialog2/0.0.1280.688@0.0.1280.688" timestamp="1595693239425" />
+    <state x="250" y="0" key="CommitChangelistDialog2/0.0.1280.688@0.0.1280.688" timestamp="1595693251672" />
     <state x="121" y="57" key="DiffContextDialog" timestamp="1595693233869">
       <screen x="0" y="0" width="1280" height="688" />
     </state>
     <state x="121" y="57" key="DiffContextDialog/0.0.1280.688@0.0.1280.688" timestamp="1595693233869" />
-    <state width="1237" height="166" key="GridCell.Tab.0.bottom" timestamp="1595517697244">
+    <state width="1237" height="166" key="GridCell.Tab.0.bottom" timestamp="1595693473992">
       <screen x="0" y="0" width="1280" height="688" />
     </state>
-    <state width="1237" height="166" key="GridCell.Tab.0.bottom/0.0.1280.688@0.0.1280.688" timestamp="1595517697244" />
-    <state width="1237" height="166" key="GridCell.Tab.0.center" timestamp="1595517697244">
+    <state width="1237" height="166" key="GridCell.Tab.0.bottom/0.0.1280.688@0.0.1280.688" timestamp="1595693473992" />
+    <state width="1237" height="166" key="GridCell.Tab.0.center" timestamp="1595693473992">
       <screen x="0" y="0" width="1280" height="688" />
     </state>
-    <state width="1237" height="166" key="GridCell.Tab.0.center/0.0.1280.688@0.0.1280.688" timestamp="1595517697244" />
-    <state width="1237" height="166" key="GridCell.Tab.0.left" timestamp="1595517697244">
+    <state width="1237" height="166" key="GridCell.Tab.0.center/0.0.1280.688@0.0.1280.688" timestamp="1595693473992" />
+    <state width="1237" height="166" key="GridCell.Tab.0.left" timestamp="1595693473992">
       <screen x="0" y="0" width="1280" height="688" />
     </state>
-    <state width="1237" height="166" key="GridCell.Tab.0.left/0.0.1280.688@0.0.1280.688" timestamp="1595517697244" />
-    <state width="1237" height="166" key="GridCell.Tab.0.right" timestamp="1595517697244">
+    <state width="1237" height="166" key="GridCell.Tab.0.left/0.0.1280.688@0.0.1280.688" timestamp="1595693473992" />
+    <state width="1237" height="166" key="GridCell.Tab.0.right" timestamp="1595693473992">
       <screen x="0" y="0" width="1280" height="688" />
     </state>
-    <state width="1237" height="166" key="GridCell.Tab.0.right/0.0.1280.688@0.0.1280.688" timestamp="1595517697244" />
+    <state width="1237" height="166" key="GridCell.Tab.0.right/0.0.1280.688@0.0.1280.688" timestamp="1595693473992" />
     <state x="233" y="78" key="Vcs.Push.Dialog.v2" timestamp="1595517264625">
       <screen x="0" y="0" width="1280" height="688" />
     </state>
