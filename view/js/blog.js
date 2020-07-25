@@ -6,6 +6,7 @@ $(function () {
         dataType: "json",
         data:{
             "page":p,
+            "limit":"8"
         },
         success: function (data) {
             console.log(data);

@@ -4,9 +4,9 @@ import (
 	"github.com/gin-gonic/gin"
 	"magic_space/common/config"
 	"magic_space/controller/asd"
-	"magic_space/controller/cblog"
 	"magic_space/controller/cvideo"
 	"magic_space/controller/index"
+	"magic_space/view/jquery-3.3.1"
 )
 
 func init() {
@@ -33,13 +33,13 @@ func main() {
 	}
 	blog := router.Group("/blog")
 	{
-		blog.GET("/list", cblog.GetBlogListByPage)
-		blog.POST("/upload", cblog.UploadBlog)
-		blog.POST("/update", cblog.UpdateBlog)
-		blog.POST("/delete", cblog.DeleteBlog)
-		blog.GET("/open", cblog.OpenBlog)
-		blog.POST("/img/upload", cblog.LoadImg)
-		blog.POST("/img/delete", cblog.DeleteImg)
+		blog.GET("/list", jquery_3_3_1.GetBlogListByPage)
+		blog.POST("/upload", jquery_3_3_1.UploadBlog)
+		blog.POST("/update", jquery_3_3_1.UpdateBlog)
+		blog.POST("/delete", jquery_3_3_1.DeleteBlog)
+		blog.GET("/open", jquery_3_3_1.OpenBlog)
+		blog.POST("/img/upload", jquery_3_3_1.LoadImg)
+		blog.POST("/img/delete", jquery_3_3_1.DeleteImg)
 	}
 	video := router.Group("/video")
 	{
