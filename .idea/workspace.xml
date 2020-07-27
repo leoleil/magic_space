@@ -3,9 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="f11f8579-7f87-4c31-a9c5-5bcf154ce9bf" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller/cblog/cblog.go" beforeDir="false" afterPath="$PROJECT_DIR$/view/jquery-3.3.1/cblog.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/js/blog.js" beforeDir="false" afterPath="$PROJECT_DIR$/view/js/blog.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/asd/asd.go" beforeDir="false" afterPath="$PROJECT_DIR$/service/asd/asd.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,6 +21,11 @@
   </component>
   <component name="GOROOT" path="C:\Go" />
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="encrypt" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="UPDATE_TYPE" value="MERGE" />
   </component>
@@ -50,6 +53,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\leoleil\go\src\magic_space\view\jquery-3.3.1" />
       <recent name="C:\Users\leoleil\go\src\magic_space\templates" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
@@ -70,6 +74,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Build.go build magic_space" />
+        <item itemvalue="Go Build.go build magic_space" />
+        <item itemvalue="Go Build.go build magic_space" />
         <item itemvalue="Go Build.go build magic_space" />
       </list>
     </recent_temporary>
@@ -116,45 +123,58 @@
     <MESSAGE value="feat&lt;video&gt;:更新页面文本" />
     <MESSAGE value="feat&lt;video&gt;:更新文本编辑器" />
     <MESSAGE value="feat&lt;blog&gt;:更新文本编辑器" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat&lt;blog&gt;:更新文本编辑器" />
+    <MESSAGE value="feat&lt;blog&gt;:每页限制8行" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat&lt;blog&gt;:每页限制8行" />
   </component>
   <component name="WindowStateProjectService">
     <state x="233" y="3" key="#GOROOT" timestamp="1589170473589">
       <screen x="0" y="0" width="1280" height="688" />
     </state>
     <state x="233" y="3" key="#GOROOT/0.0.1280.688@0.0.1280.688" timestamp="1589170473589" />
-    <state x="250" y="0" key="CommitChangelistDialog2" timestamp="1595693600529">
+    <state x="250" y="0" key="CommitChangelistDialog2" timestamp="1595864403945">
       <screen x="0" y="0" width="1280" height="688" />
     </state>
-    <state x="250" y="0" key="CommitChangelistDialog2/0.0.1280.688@0.0.1280.688" timestamp="1595693600529" />
+    <state x="250" y="0" key="CommitChangelistDialog2/0.0.1280.688@0.0.1280.688" timestamp="1595864403945" />
     <state x="121" y="57" key="DiffContextDialog" timestamp="1595693233869">
       <screen x="0" y="0" width="1280" height="688" />
     </state>
     <state x="121" y="57" key="DiffContextDialog/0.0.1280.688@0.0.1280.688" timestamp="1595693233869" />
-    <state width="1237" height="166" key="GridCell.Tab.0.bottom" timestamp="1595693918831">
+    <state width="1237" height="166" key="GridCell.Tab.0.bottom" timestamp="1595694527436">
       <screen x="0" y="0" width="1280" height="688" />
     </state>
-    <state width="1237" height="166" key="GridCell.Tab.0.bottom/0.0.1280.688@0.0.1280.688" timestamp="1595693918831" />
-    <state width="1237" height="166" key="GridCell.Tab.0.center" timestamp="1595693918830">
+    <state width="1237" height="166" key="GridCell.Tab.0.bottom/0.0.1280.688@0.0.1280.688" timestamp="1595694527436" />
+    <state width="1237" height="166" key="GridCell.Tab.0.center" timestamp="1595694527435">
       <screen x="0" y="0" width="1280" height="688" />
     </state>
-    <state width="1237" height="166" key="GridCell.Tab.0.center/0.0.1280.688@0.0.1280.688" timestamp="1595693918830" />
-    <state width="1237" height="166" key="GridCell.Tab.0.left" timestamp="1595693918830">
+    <state width="1237" height="166" key="GridCell.Tab.0.center/0.0.1280.688@0.0.1280.688" timestamp="1595694527435" />
+    <state width="1237" height="166" key="GridCell.Tab.0.left" timestamp="1595694527435">
       <screen x="0" y="0" width="1280" height="688" />
     </state>
-    <state width="1237" height="166" key="GridCell.Tab.0.left/0.0.1280.688@0.0.1280.688" timestamp="1595693918830" />
-    <state width="1237" height="166" key="GridCell.Tab.0.right" timestamp="1595693918831">
+    <state width="1237" height="166" key="GridCell.Tab.0.left/0.0.1280.688@0.0.1280.688" timestamp="1595694527435" />
+    <state width="1237" height="166" key="GridCell.Tab.0.right" timestamp="1595694527436">
       <screen x="0" y="0" width="1280" height="688" />
     </state>
-    <state width="1237" height="166" key="GridCell.Tab.0.right/0.0.1280.688@0.0.1280.688" timestamp="1595693918831" />
-    <state x="233" y="78" key="Vcs.Push.Dialog.v2" timestamp="1595693644346">
+    <state width="1237" height="166" key="GridCell.Tab.0.right/0.0.1280.688@0.0.1280.688" timestamp="1595694527436" />
+    <state x="351" y="60" key="MultipleFileMergeDialog" timestamp="1595864524279">
       <screen x="0" y="0" width="1280" height="688" />
     </state>
-    <state x="233" y="78" key="Vcs.Push.Dialog.v2/0.0.1280.688@0.0.1280.688" timestamp="1595693644346" />
-    <state x="437" y="262" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1595693609923">
+    <state x="351" y="60" key="MultipleFileMergeDialog/0.0.1280.688@0.0.1280.688" timestamp="1595864524279" />
+    <state x="233" y="78" key="Vcs.Push.Dialog.v2" timestamp="1595864456913">
       <screen x="0" y="0" width="1280" height="688" />
     </state>
-    <state x="437" y="262" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1280.688@0.0.1280.688" timestamp="1595693609923" />
+    <state x="233" y="78" key="Vcs.Push.Dialog.v2/0.0.1280.688@0.0.1280.688" timestamp="1595864456913" />
+    <state x="437" y="262" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1595864442842">
+      <screen x="0" y="0" width="1280" height="688" />
+    </state>
+    <state x="437" y="262" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1280.688@0.0.1280.688" timestamp="1595864442842" />
+    <state x="407" y="57" key="git4idea.branch.GitSmartOperationDialog" timestamp="1595864501853">
+      <screen x="0" y="0" width="1280" height="688" />
+    </state>
+    <state x="407" y="57" key="git4idea.branch.GitSmartOperationDialog/0.0.1280.688@0.0.1280.688" timestamp="1595864501853" />
+    <state x="430" y="136" key="git4idea.merge.GitMergeDialog" timestamp="1595864544743">
+      <screen x="0" y="0" width="1280" height="688" />
+    </state>
+    <state x="430" y="136" key="git4idea.merge.GitMergeDialog/0.0.1280.688@0.0.1280.688" timestamp="1595864544743" />
     <state x="354" y="136" key="git4idea.merge.GitPullDialog" timestamp="1589170764255">
       <screen x="0" y="0" width="1280" height="688" />
     </state>
