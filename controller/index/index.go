@@ -1,9 +1,10 @@
 package index
 
 import (
-	"github.com/gin-gonic/gin"
-	"magic_space/service/sblog"
 	"strconv"
+
+	"github.com/gin-gonic/gin"
+	"github.com/leoleil/magic_space/service/sblog"
 )
 
 func LoadIndex(context *gin.Context) {

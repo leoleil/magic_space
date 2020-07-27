@@ -2,7 +2,8 @@ package database
 
 import (
 	"database/sql"
-	"magic_space/common/database/mysql"
+
+	"github.com/leoleil/magic_space/common/database/mysql"
 )
 
 type DataBase interface {

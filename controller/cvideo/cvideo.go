@@ -1,11 +1,12 @@
 package cvideo
 
 import (
-	"github.com/gin-gonic/gin"
-	"io/ioutil"
-	"magic_space/common/config"
 	"net/http"
 	"strings"
+	"io/ioutil"
+
+	"github.com/leoleil/magic_space/common/config"
+	"github.com/gin-gonic/gin"
 )
 
 func GetVideoList(context *gin.Context) {

@@ -5,7 +5,8 @@ import (
 	"errors"
 	"fmt"
 	"log"
-	"magic_space/common/database"
+
+	"github.com/leoleil/magic_space/common/database"
 )
 
 type MsSysUser struct {

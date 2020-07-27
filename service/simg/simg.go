@@ -2,13 +2,14 @@ package simg
 
 import (
 	"io"
-	"magic_space/module/img"
-	"magic_space/module/user"
 	"mime/multipart"
 	"os"
 	"strconv"
 	"strings"
 	"time"
+
+	"github.com/leoleil/magic_space/module/img"
+	"github.com/leoleil/magic_space/module/user"
 )
 
 func SaveImg(file multipart.File, fileName, key string) (url string, err error) {

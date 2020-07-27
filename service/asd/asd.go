@@ -2,9 +2,10 @@ package asd
 
 import (
 	"errors"
-	uuid "github.com/satori/go.uuid"
-	asdDao "magic_space/module/user"
 	"strings"
+
+	uuid "github.com/satori/go.uuid"
+	asdDao "github.com/leoleil/magic_space/module/user"
 )
 
 // 验证

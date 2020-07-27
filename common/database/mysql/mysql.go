@@ -3,9 +3,11 @@ package mysql
 import (
 	"database/sql"
 	"fmt"
-	_ "github.com/go-sql-driver/mysql"
-	"magic_space/common/config"
 	"strings"
+
+	"github.com/leoleil/magic_space/common/config"
+
+	_ "github.com/go-sql-driver/mysql"
 )
 type Handle struct {
 	db *sql.DB
