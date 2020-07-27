@@ -1,12 +1,13 @@
 package jquery_3_3_1
 
 import (
-	"github.com/gin-gonic/gin"
-	"magic_space/common/utilities"
-	"magic_space/service/sblog"
-	"magic_space/service/simg"
 	"net/http"
 	"strconv"
+
+	"github.com/gin-gonic/gin"
+	"github.com/leoleil/magic_space/common/utilities"
+	"github.com/leoleil/magic_space/service/sblog"
+	"github.com/leoleil/magic_space/service/simg"
 )
 
 func UploadBlog(context *gin.Context) {
