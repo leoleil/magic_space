@@ -2,8 +2,8 @@ package asd
 
 import (
 	"github.com/gin-gonic/gin"
-	"magic_space/common/utilities"
-	asdService "magic_space/service/asd"
+	"github.com/leoleil/magic_space/common/utilities"
+	asdService "github.com/leoleil/magic_space/service/asd"
 	"net/http"
 )
 

@@ -2,7 +2,7 @@ package index
 
 import (
 	"github.com/gin-gonic/gin"
-	"magic_space/service/sblog"
+	"github.com/leoleil/magic_space/service/sblog"
 	"strconv"
 )
 

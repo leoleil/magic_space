@@ -5,7 +5,7 @@ import (
 	"errors"
 	"fmt"
 	uuid "github.com/satori/go.uuid"
-	asdDao "magic_space/module/user"
+	asdDao "github.com/leoleil/magic_space/module/user"
 	"strings"
 )
 

@@ -2,11 +2,11 @@ package main
 
 import (
 	"github.com/gin-gonic/gin"
-	"magic_space/common/config"
-	"magic_space/controller/asd"
-	"magic_space/controller/cvideo"
-	"magic_space/controller/index"
-	"magic_space/view/jquery-3.3.1"
+	"github.com/leoleil/magic_space/common/config"
+	"github.com/leoleil/magic_space/controller/asd"
+	"github.com/leoleil/magic_space/controller/cvideo"
+	"github.com/leoleil/magic_space/controller/index"
+	"github.com/leoleil/magic_space/view/jquery-3.3.1"
 )
 
 func init() {
