@@ -3,7 +3,7 @@ package blog
 import (
 	"errors"
 	"fmt"
-	"magic_space/common/database"
+	"github.com/leoleil/magic_space/common/database"
 )
 
 type BlogEntity struct {

@@ -3,7 +3,7 @@ package cvideo
 import (
 	"github.com/gin-gonic/gin"
 	"io/ioutil"
-	"magic_space/common/config"
+	"github.com/leoleil/magic_space/common/config"
 	"net/http"
 	"strings"
 )

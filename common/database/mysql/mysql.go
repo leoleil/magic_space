@@ -4,7 +4,7 @@ import (
 	"database/sql"
 	"fmt"
 	_ "github.com/go-sql-driver/mysql"
-	"magic_space/common/config"
+	"github.com/leoleil/magic_space/common/config"
 	"strings"
 )
 type Handle struct {
