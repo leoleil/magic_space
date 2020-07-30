@@ -86,6 +86,7 @@ func InsertUser(username,password,email string)(err error) {
 		return
 	}
 	defer handle.CloseDB()
+	//todo 新增一列为是否进行邮箱校验
 	if handle.Insert("INSERT INTO ms_sys_user(`GMT_CREATE`, `GMT_MODIFIED`, `USERNAME`, `PSW`, `EMAIL`)VALUES(now(),now(),?,?,?)",username,password,email){
 		return nil
 	}else{

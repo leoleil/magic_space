@@ -10,7 +10,7 @@ import (
 )
 
 func init() {
-	config.AppHandle.GetConf()
+	config.AppHandle.GetConf("config/app.yml")
 }
 func main() {
 	router := gin.Default()
@@ -30,6 +30,7 @@ func main() {
 		user.POST("/login", asd.Login)
 		user.POST("/sign", asd.SignIn)
 		user.POST("/check", asd.Check)
+		user.GET("/sign/confirm", asd.ConfirmEmail)
 	}
 	blog := router.Group("/blog")
 	{

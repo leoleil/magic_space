@@ -2,8 +2,9 @@ package asd
 
 import (
 	"errors"
-	uuid "github.com/satori/go.uuid"
+	"github.com/leoleil/magic_space/common/email"
 	asdDao "github.com/leoleil/magic_space/module/user"
+	uuid "github.com/satori/go.uuid"
 	"strings"
 )
 
@@ -31,6 +32,9 @@ func Authorization(key string)(user asdDao.MsSysUser, err error) {
 func SignIn(username, password, passwordAgain, mail string)error{
 	if strings.Compare(password,passwordAgain) != 0{
 		return errors.New("两次输入密码不一致")
+	}
+	if !email.SendToSome(mail){
+		return errors.New("发送验证邮件失败")
 	}
 	err := asdDao.InsertUser(username,password,mail)
 	return err

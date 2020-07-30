@@ -1,6 +1,7 @@
 package asd
 
 import (
+	"encoding/base64"
 	"github.com/gin-gonic/gin"
 	"github.com/leoleil/magic_space/common/utilities"
 	asdService "github.com/leoleil/magic_space/service/asd"
@@ -62,4 +63,24 @@ func Check(context *gin.Context) {
 		"username": user.Username,
 	})
 	return
+}
+
+func ConfirmEmail(context *gin.Context) {
+	//todo 进行数据库更新，解析get请求
+	emailEncode := context.Query("user")
+	userName := context.Query("email")
+	decoded, _ := base64.StdEncoding.DecodeString(emailEncode)
+	emailDecode := string(decoded)
+	if userName == emailDecode {
+		//todo 更换html
+		context.HTML(200, "sign_up_page.html", gin.H{
+			"title": "MC Space",
+			"message":"成功",
+		})
+	} else {
+		context.HTML(200, "sign_up_page.html", gin.H{
+			"title": "MC Space",
+			"message":"失败",
+		})
+	}
 }

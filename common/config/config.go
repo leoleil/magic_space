@@ -16,13 +16,20 @@ type Mysql struct {
 type Video struct {
 	Path string `yaml:"path"`
 }
+type Email struct {
+	User string `yaml:"user"`
+	Pwd  string `yaml:"pwd"`
+	Host string `yaml:"host"`
+	Port string `yaml:"port"`
+}
 type App struct {
 	Mysql Mysql `yaml:"mysql"`
 	Video Video `yaml:"video"`
+	Email Email `yaml:"email"`
 }
 
-func (c *App) GetConf() *App {
-	yamlFile, err := ioutil.ReadFile("config/app.yml")
+func (c *App) GetConf(path string) *App {
+	yamlFile, err := ioutil.ReadFile(path)
 	if err != nil {
 		fmt.Println(err.Error())
 	}

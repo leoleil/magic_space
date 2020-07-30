@@ -6,3 +6,8 @@ mysql:
   dbname: magic_space
 video:
   path: /usr/local/nginx/html/video
+email:
+  user: magic_space_leo@163.com
+  pwd: LLKZPTUFPETNUWDY
+  host: smtp.163.com
+  port: 465
