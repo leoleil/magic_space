@@ -1,4 +1,4 @@
-package jquery_3_3_1
+package cblog
 
 import (
 	"github.com/gin-gonic/gin"
