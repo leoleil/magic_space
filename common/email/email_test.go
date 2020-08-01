@@ -10,6 +10,6 @@ func init()  {
 	config.AppHandle.GetConf("../../config/app.yml")
 }
 
-func TestSendToSome(t *testing.T) {
-	assert.Equal(t, true, SendToSome("1105263198@qq.com"))
+func TestSendToSomeConfirm(t *testing.T) {
+	assert.Equal(t, true, SendToSomeConfirm("1105263198@qq.com"))
 }

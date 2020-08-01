@@ -9,33 +9,43 @@ import (
 )
 
 // 验证
-func Authentication(username,password string)(key string,err error){
-	user,err := asdDao.QueryUserByUsername(username)
-	if err != nil{
+func Authentication(username, password string) (key string, err error) {
+	user, err := asdDao.QueryUserByUsername(username)
+	if err != nil {
 		return
 	}
-	if user.Psw == password{
-		onlyKey,_ := uuid.NewV4()// 生成秘钥
+	if user.Psw == password {
+		onlyKey, _ := uuid.NewV4() // 生成秘钥
 		key := onlyKey.String()
-		err = asdDao.UpdateKeyByUserId(user.Id,key)
-		return key,err
-	}else{
+		err = asdDao.UpdateKeyByUserId(user.Id, key)
+		return key, err
+	} else {
 		err = errors.New("密码或者用户名不正确")
-		return key,err
+		return key, err
 	}
 }
+
 // 授权
-func Authorization(key string)(user asdDao.MsSysUser, err error) {
+func Authorization(key string) (user asdDao.MsSysUser, err error) {
 	return asdDao.QueryUserByKey(key)
 }
+
 // 注册
-func SignIn(username, password, passwordAgain, mail string)error{
-	if strings.Compare(password,passwordAgain) != 0{
+func SignIn(username, password, passwordAgain, mail string) error {
+	if strings.Compare(password, passwordAgain) != 0 {
 		return errors.New("两次输入密码不一致")
 	}
-	if !email.SendToSome(mail){
+	// 判断是否邮箱已经被注册
+	if emailNums, confirm, err := asdDao.QueryUserConfirmByEmail(mail); err == nil {
+		if emailNums > 1 || confirm {
+			return errors.New("邮箱已被注册")
+		} else if emailNums == 1 && confirm {
+			return errors.New("邮箱已被注册")
+		}
+	}
+	if !email.SendToSomeConfirm(mail) {
 		return errors.New("发送验证邮件失败")
 	}
-	err := asdDao.InsertUser(username,password,mail)
+	err := asdDao.InsertUser(username, password, mail)
 	return err
 }

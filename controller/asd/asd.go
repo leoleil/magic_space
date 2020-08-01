@@ -4,6 +4,7 @@ import (
 	"encoding/base64"
 	"github.com/gin-gonic/gin"
 	"github.com/leoleil/magic_space/common/utilities"
+	asdDao "github.com/leoleil/magic_space/module/user"
 	asdService "github.com/leoleil/magic_space/service/asd"
 	"net/http"
 )
@@ -15,6 +16,13 @@ func Login(context *gin.Context) {
 	if err != nil {
 		context.JSON(http.StatusExpectationFailed, gin.H{
 			"msg": "用户名或者密码不正确",
+		})
+		return
+	}
+	_, confirm, err := asdDao.QueryUserConfirmByUser(username)
+	if err != nil || !confirm {
+		context.JSON(http.StatusExpectationFailed, gin.H{
+			"msg": "检测用户邮箱注册状态失败",
 		})
 		return
 	}
@@ -66,21 +74,34 @@ func Check(context *gin.Context) {
 }
 
 func ConfirmEmail(context *gin.Context) {
-	//todo 进行数据库更新，解析get请求
 	emailEncode := context.Query("user")
-	userName := context.Query("email")
+	userEmail := context.Query("email")
 	decoded, _ := base64.StdEncoding.DecodeString(emailEncode)
 	emailDecode := string(decoded)
-	if userName == emailDecode {
-		//todo 更换html
-		context.HTML(200, "sign_up_page.html", gin.H{
-			"title": "MC Space",
-			"message":"成功",
-		})
+	if userEmail == emailDecode && userEmail != "" {
+		if nums, confirm, err := asdDao.QueryUserConfirmByEmail(userEmail); err == nil {
+			if nums > 1 || confirm {
+				confirmHtml(context, "账户已被激活，请勿重复激活")
+			} else if nums == 0 {
+				confirmHtml(context, "账户不存在")
+			} else if nums == 1 && !confirm {
+				if err = asdDao.UpdateUserConfirmByEmail(userEmail); err != nil {
+					confirmHtml(context, "账户状态更新失败，请联系管理员xing720730@163.com")
+				} else {
+					confirmHtml(context, "账户激活成功")
+				}
+			} else {
+				confirmHtml(context, "你是怎么做到的？请联系管理员xing720730@163.com")
+			}
+		}
 	} else {
-		context.HTML(200, "sign_up_page.html", gin.H{
-			"title": "MC Space",
-			"message":"失败",
-		})
+		confirmHtml(context, "解析url失败，请联系管理员xing720730@163.com")
 	}
+}
+
+func confirmHtml(context *gin.Context, message string) {
+	context.HTML(200, "sign_up_page.html", gin.H{
+		"title":   "MC Space",
+		"message": message,
+	})
 }
