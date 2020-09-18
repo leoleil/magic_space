@@ -2,6 +2,7 @@ package asd
 
 import (
 	"encoding/base64"
+	"crypto/md5"
 	"errors"
 	"fmt"
 	"github.com/leoleil/magic_space/common/email"
@@ -17,7 +18,8 @@ func Authentication(username, password string) (key string, err error) {
 	if err != nil {
 		return
 	}
-	if user.Psw == password {
+
+	if user.Psw == encrypt(password) {
 		onlyKey, _ := uuid.NewV4() // 生成秘钥
 		key := onlyKey.String()
 		err = asdDao.UpdateKeyByUserId(user.Id, key)
@@ -50,7 +52,16 @@ func SignIn(username, password, passwordAgain, mail string) error {
 		return errors.New("发送验证邮件失败")
 	}
 	err := asdDao.InsertUser(username, password, mail)
+
+	err := asdDao.InsertUser(username, encrypt(password), mail)
 	return err
+}
+
+// 加密
+func encrypt(key string) string {
+	data := []byte(key)
+	has := md5.Sum(data)
+	return fmt.Sprintf("%x", has)
 }
 
 // 激活
