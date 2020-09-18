@@ -1,10 +1,13 @@
 package asd
 
 import (
+	"encoding/base64"
 	"errors"
+	"fmt"
 	"github.com/leoleil/magic_space/common/email"
 	asdDao "github.com/leoleil/magic_space/module/user"
 	uuid "github.com/satori/go.uuid"
+	"log"
 	"strings"
 )
 
@@ -48,4 +51,31 @@ func SignIn(username, password, passwordAgain, mail string) error {
 	}
 	err := asdDao.InsertUser(username, password, mail)
 	return err
+}
+
+// 激活
+func Activation(key, email string) error {
+
+}
+
+func sendConfirmMail(username, email string) bool {
+	// 定义收件人
+	mailTo := []string{email}
+	// 邮件主题
+	subject := "MC Space 激活邮件"
+	// key 用户信息和email一起做md5加密
+
+	emailEncode := base64.StdEncoding.EncodeToString([]byte(user))
+	url := "http://www.mcspace.icu:4010/asd/sign/confirm?user=" + emailEncode + "&email=" + user
+	fmt.Println(url)
+	// todo 修改正文发送格式
+	body := "你好，" + user + "，请点击下方网址激活邮箱：" + url
+	err := SendMail(mailTo, subject, body)
+	if err != nil {
+		log.Println(err)
+		fmt.Println("send fail")
+		return false
+	}
+	fmt.Println("send successfully")
+	return true
 }

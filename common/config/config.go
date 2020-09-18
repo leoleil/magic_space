@@ -22,6 +22,10 @@ type Email struct {
 	Host string `yaml:"host"`
 	Port string `yaml:"port"`
 }
+type Host struct {
+	Name string `yaml:"name"`
+	Port string `yaml:"port"`
+}
 type App struct {
 	Mysql Mysql `yaml:"mysql"`
 	Video Video `yaml:"video"`
