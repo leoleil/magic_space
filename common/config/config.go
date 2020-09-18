@@ -30,6 +30,7 @@ type App struct {
 	Mysql Mysql `yaml:"mysql"`
 	Video Video `yaml:"video"`
 	Email Email `yaml:"email"`
+	Host  Host  `yaml:"host"`
 }
 
 func (c *App) GetConf(path string) *App {

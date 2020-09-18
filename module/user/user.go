@@ -40,7 +40,21 @@ func QueryUserByUsername(username string) (msSysUser MsSysUser, err error) {
 		return
 	}
 	defer handle.CloseDB()
-	err = db.QueryRow("SELECT `id`,`Gmt_Create`,`Psw`,`Gmt_Modified`,`Username`,`Key`, `Email` FROM ms_sys_user WHERE username = ?", username).Scan(&msSysUser.Id, &msSysUser.GmtCreate, &msSysUser.Psw, &msSysUser.GmtModified, &msSysUser.Username, &msSysUser.Key, &msSysUser.Email)
+	err = db.QueryRow("SELECT `id`,`Gmt_Create`,`Psw`,`Gmt_Modified`,`Username`,`Key`, `Email` FROM ms_sys_user WHERE username = ? or email = username", username, username).Scan(&msSysUser.Id, &msSysUser.GmtCreate, &msSysUser.Psw, &msSysUser.GmtModified, &msSysUser.Username, &msSysUser.Key, &msSysUser.Email)
+	if err != nil {
+		fmt.Println("查询出错了")
+	}
+	return
+}
+func QueryUserByEmail(email string) (msSysUser MsSysUser, err error) {
+	handle := database.GetHandle()
+	db, ok := handle.InitDB()
+	if !ok {
+		err = errors.New("数据库连接失败")
+		return
+	}
+	defer handle.CloseDB()
+	err = db.QueryRow("SELECT `id`,`Gmt_Create`,`Psw`,`Gmt_Modified`,`Username`,`Key`, `Email` FROM ms_sys_user WHERE Email = ?", email).Scan(&msSysUser.Id, &msSysUser.GmtCreate, &msSysUser.Psw, &msSysUser.GmtModified, &msSysUser.Username, &msSysUser.Key, &msSysUser.Email)
 	if err != nil {
 		fmt.Println("查询出错了")
 	}

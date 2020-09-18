@@ -3,7 +3,7 @@ package main
 import (
 	"github.com/gin-gonic/gin"
 	"github.com/leoleil/magic_space/common/config"
-	"github.com/leoleil/magic_space/controller/asd"
+	"github.com/leoleil/magic_space/controller/casd"
 	"github.com/leoleil/magic_space/controller/cblog"
 	"github.com/leoleil/magic_space/controller/cvideo"
 	"github.com/leoleil/magic_space/controller/index"
@@ -27,10 +27,10 @@ func main() {
 	router.GET("/video/open", index.LoadVideoOpen)
 	user := router.Group("/asd")
 	{
-		user.POST("/login", asd.Login)
-		user.POST("/sign", asd.SignIn)
-		user.POST("/check", asd.Check)
-		user.GET("/sign/confirm", asd.ConfirmEmail)
+		user.POST("/login", casd.Login)
+		user.POST("/sign", casd.SignIn)
+		user.POST("/check", casd.Check)
+		user.GET("/sign/confirm", casd.ConfirmEmail)
 	}
 	blog := router.Group("/blog")
 	{

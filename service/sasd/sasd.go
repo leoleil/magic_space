@@ -1,11 +1,10 @@
-package asd
+package sasd
 
 import (
-	"encoding/base64"
-	"crypto/md5"
 	"errors"
-	"fmt"
+	"github.com/leoleil/magic_space/common/config"
 	"github.com/leoleil/magic_space/common/email"
+	"github.com/leoleil/magic_space/common/encrypt"
 	asdDao "github.com/leoleil/magic_space/module/user"
 	uuid "github.com/satori/go.uuid"
 	"log"
@@ -18,8 +17,7 @@ func Authentication(username, password string) (key string, err error) {
 	if err != nil {
 		return
 	}
-
-	if user.Psw == encrypt(password) {
+	if user.Psw == encrypt.GetMd5Key(password) {
 		onlyKey, _ := uuid.NewV4() // 生成秘钥
 		key := onlyKey.String()
 		err = asdDao.UpdateKeyByUserId(user.Id, key)
@@ -48,45 +46,45 @@ func SignIn(username, password, passwordAgain, mail string) error {
 			return errors.New("邮箱已被注册")
 		}
 	}
-	if !email.SendToSomeConfirm(mail) {
+	if !senMailToUser(mail) {
 		return errors.New("发送验证邮件失败")
 	}
-	err := asdDao.InsertUser(username, password, mail)
-
-	err := asdDao.InsertUser(username, encrypt(password), mail)
+	err := asdDao.InsertUser(username, encrypt.GetMd5Key(password), mail)
 	return err
-}
-
-// 加密
-func encrypt(key string) string {
-	data := []byte(key)
-	has := md5.Sum(data)
-	return fmt.Sprintf("%x", has)
 }
 
 // 激活
 func Activation(key, email string) error {
-
+	// 验证key
+	if key != encrypt.GetMd5Key(email+"mc space") {
+		return errors.New("无效链接")
+	}
+	_, confirmByEmail, err := asdDao.QueryUserConfirmByEmail(email)
+	if err != nil {
+		return errors.New("系统错误")
+	}
+	if confirmByEmail {
+		return errors.New("重复激活")
+	}
+	err = asdDao.UpdateUserConfirmByEmail(email)
+	if err != nil {
+		return errors.New("系统错误")
+	}
+	return nil
 }
 
-func sendConfirmMail(username, email string) bool {
+func senMailToUser(mail string) bool {
 	// 定义收件人
-	mailTo := []string{email}
+	mailTo := []string{mail}
 	// 邮件主题
 	subject := "MC Space 激活邮件"
-	// key 用户信息和email一起做md5加密
-
-	emailEncode := base64.StdEncoding.EncodeToString([]byte(user))
-	url := "http://www.mcspace.icu:4010/asd/sign/confirm?user=" + emailEncode + "&email=" + user
-	fmt.Println(url)
-	// todo 修改正文发送格式
-	body := "你好，" + user + "，请点击下方网址激活邮箱：" + url
-	err := SendMail(mailTo, subject, body)
+	emailEncode := encrypt.GetMd5Key(mail + "mc space")
+	url := config.AppHandle.Host.Name + ":" + config.AppHandle.Host.Port + "/asd/sign/confirm?key=" + emailEncode + "&email=" + mail
+	body := "你好! 请点击下方网址激活邮箱：" + url
+	err := email.SendMail(mailTo, subject, body)
 	if err != nil {
 		log.Println(err)
-		fmt.Println("send fail")
 		return false
 	}
-	fmt.Println("send successfully")
 	return true
 }

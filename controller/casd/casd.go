@@ -1,11 +1,10 @@
-package asd
+package casd
 
 import (
-	"encoding/base64"
 	"github.com/gin-gonic/gin"
 	"github.com/leoleil/magic_space/common/utilities"
 	asdDao "github.com/leoleil/magic_space/module/user"
-	asdService "github.com/leoleil/magic_space/service/asd"
+	asdService "github.com/leoleil/magic_space/service/sasd"
 	"net/http"
 )
 
@@ -74,28 +73,13 @@ func Check(context *gin.Context) {
 }
 
 func ConfirmEmail(context *gin.Context) {
-	emailEncode := context.Query("user")
+	key := context.Query("key")
 	userEmail := context.Query("email")
-	decoded, _ := base64.StdEncoding.DecodeString(emailEncode)
-	emailDecode := string(decoded)
-	if userEmail == emailDecode && userEmail != "" {
-		if nums, confirm, err := asdDao.QueryUserConfirmByEmail(userEmail); err == nil {
-			if nums > 1 || confirm {
-				confirmHtml(context, "账户已被激活，请勿重复激活")
-			} else if nums == 0 {
-				confirmHtml(context, "账户不存在")
-			} else if nums == 1 && !confirm {
-				if err = asdDao.UpdateUserConfirmByEmail(userEmail); err != nil {
-					confirmHtml(context, "账户状态更新失败，请联系管理员xing720730@163.com")
-				} else {
-					confirmHtml(context, "账户激活成功")
-				}
-			} else {
-				confirmHtml(context, "你是怎么做到的？请联系管理员xing720730@163.com")
-			}
-		}
+	err := asdService.Activation(key, userEmail)
+	if err != nil {
+		confirmHtml(context, err.Error())
 	} else {
-		confirmHtml(context, "解析url失败，请联系管理员xing720730@163.com")
+		confirmHtml(context, "账户激活成功")
 	}
 }
 

@@ -12,5 +12,5 @@ email:
   host: smtp.163.com
   port: 465
 host:
-  name: www.mcspace.icu
+  name: http://www.mcspace.icu
   port: 4010

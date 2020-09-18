@@ -2,8 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f11f8579-7f87-4c31-a9c5-5bcf154ce9bf" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/common/encrypt/encrypt.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/asd/asd.go" beforeDir="false" afterPath="$PROJECT_DIR$/service/asd/asd.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/config/config.go" beforeDir="false" afterPath="$PROJECT_DIR$/common/config/config.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/app.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/app_local.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config/app_local.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controller/asd/asd.go" beforeDir="false" afterPath="$PROJECT_DIR$/controller/casd/casd.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module/user/user.go" beforeDir="false" afterPath="$PROJECT_DIR$/module/user/user.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/asd/asd.go" beforeDir="false" afterPath="$PROJECT_DIR$/service/sasd/sasd.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,17 +59,26 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\leoleil\go\src\magic_space\view\jquery-3.3.1" />
-      <recent name="C:\Users\leoleil\go\src\magic_space\templates" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\leoleil\go\src\magic_space\view" />
       <recent name="C:\Users\leoleil\go\src\magic_space\view\js\tinymce\langs" />
       <recent name="C:\Users\leoleil\go\src\magic_space\view\js" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\leoleil\go\src\magic_space\view\jquery-3.3.1" />
+      <recent name="C:\Users\leoleil\go\src\magic_space\templates" />
+    </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Go Build.go build github.com/leoleil/magic_space">
+    <configuration name="go build github.com/leoleil/magic_space" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="magic_space" />
+      <working_directory value="$PROJECT_DIR$/" />
+      <kind value="PACKAGE" />
+      <filePath value="$PROJECT_DIR$/main.go" />
+      <package value="github.com/leoleil/magic_space" />
+      <directory value="$PROJECT_DIR$/" />
+      <method v="2" />
+    </configuration>
     <configuration name="go build magic_space" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="magic_space" />
       <working_directory value="$PROJECT_DIR$/" />
@@ -74,6 +90,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Build.go build github.com/leoleil/magic_space" />
         <item itemvalue="Go Build.go build magic_space" />
         <item itemvalue="Go Build.go build magic_space" />
         <item itemvalue="Go Build.go build magic_space" />
@@ -126,10 +143,10 @@
     <option name="LAST_COMMIT_MESSAGE" value="feat&lt;blog&gt;:每页限制8行" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="233" y="3" key="#GOROOT" timestamp="1589170473589">
+    <state x="96" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1600423559212">
       <screen x="0" y="0" width="1280" height="688" />
     </state>
-    <state x="233" y="3" key="#GOROOT/0.0.1280.688@0.0.1280.688" timestamp="1589170473589" />
+    <state x="96" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.688@0.0.1280.688" timestamp="1600423559212" />
     <state x="250" y="0" key="CommitChangelistDialog2" timestamp="1595694017352">
       <screen x="0" y="0" width="1280" height="688" />
     </state>
@@ -138,22 +155,22 @@
       <screen x="0" y="0" width="1280" height="688" />
     </state>
     <state x="121" y="57" key="DiffContextDialog/0.0.1280.688@0.0.1280.688" timestamp="1595693233869" />
-    <state width="1237" height="166" key="GridCell.Tab.0.bottom" timestamp="1595694527436">
+    <state width="1237" height="171" key="GridCell.Tab.0.bottom" timestamp="1600423422066">
       <screen x="0" y="0" width="1280" height="688" />
     </state>
-    <state width="1237" height="166" key="GridCell.Tab.0.bottom/0.0.1280.688@0.0.1280.688" timestamp="1595694527436" />
-    <state width="1237" height="166" key="GridCell.Tab.0.center" timestamp="1595694527435">
+    <state width="1237" height="171" key="GridCell.Tab.0.bottom/0.0.1280.688@0.0.1280.688" timestamp="1600423422066" />
+    <state width="1237" height="171" key="GridCell.Tab.0.center" timestamp="1600423422066">
       <screen x="0" y="0" width="1280" height="688" />
     </state>
-    <state width="1237" height="166" key="GridCell.Tab.0.center/0.0.1280.688@0.0.1280.688" timestamp="1595694527435" />
-    <state width="1237" height="166" key="GridCell.Tab.0.left" timestamp="1595694527435">
+    <state width="1237" height="171" key="GridCell.Tab.0.center/0.0.1280.688@0.0.1280.688" timestamp="1600423422066" />
+    <state width="1237" height="171" key="GridCell.Tab.0.left" timestamp="1600423422065">
       <screen x="0" y="0" width="1280" height="688" />
     </state>
-    <state width="1237" height="166" key="GridCell.Tab.0.left/0.0.1280.688@0.0.1280.688" timestamp="1595694527435" />
-    <state width="1237" height="166" key="GridCell.Tab.0.right" timestamp="1595694527436">
+    <state width="1237" height="171" key="GridCell.Tab.0.left/0.0.1280.688@0.0.1280.688" timestamp="1600423422065" />
+    <state width="1237" height="171" key="GridCell.Tab.0.right" timestamp="1600423422066">
       <screen x="0" y="0" width="1280" height="688" />
     </state>
-    <state width="1237" height="166" key="GridCell.Tab.0.right/0.0.1280.688@0.0.1280.688" timestamp="1595694527436" />
+    <state width="1237" height="171" key="GridCell.Tab.0.right/0.0.1280.688@0.0.1280.688" timestamp="1600423422066" />
     <state x="233" y="78" key="Vcs.Push.Dialog.v2" timestamp="1595861902397">
       <screen x="0" y="0" width="1280" height="688" />
     </state>
@@ -162,13 +179,9 @@
       <screen x="0" y="0" width="1280" height="688" />
     </state>
     <state x="437" y="262" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1280.688@0.0.1280.688" timestamp="1595861685016" />
-    <state x="354" y="136" key="git4idea.merge.GitPullDialog" timestamp="1589170764255">
+    <state x="303" y="9" width="672" height="678" key="search.everywhere.popup" timestamp="1600419877477">
       <screen x="0" y="0" width="1280" height="688" />
     </state>
-    <state x="354" y="136" key="git4idea.merge.GitPullDialog/0.0.1280.688@0.0.1280.688" timestamp="1589170764255" />
-    <state x="303" y="9" width="672" height="678" key="search.everywhere.popup" timestamp="1595343377953">
-      <screen x="0" y="0" width="1280" height="688" />
-    </state>
-    <state x="303" y="9" width="672" height="678" key="search.everywhere.popup/0.0.1280.688@0.0.1280.688" timestamp="1595343377953" />
+    <state x="303" y="9" width="672" height="678" key="search.everywhere.popup/0.0.1280.688@0.0.1280.688" timestamp="1600419877477" />
   </component>
 </project>
