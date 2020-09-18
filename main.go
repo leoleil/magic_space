@@ -1,6 +1,7 @@
 package main
 
 import (
+	"flag"
 	"github.com/gin-gonic/gin"
 	"github.com/leoleil/magic_space/common/config"
 	"github.com/leoleil/magic_space/controller/casd"
@@ -9,10 +10,11 @@ import (
 	"github.com/leoleil/magic_space/controller/index"
 )
 
-func init() {
-	config.AppHandle.GetConf("config/app.yml")
-}
+var path = flag.String("config", "app.yml", "-config app.yml")
+
 func main() {
+	flag.Parse()
+	config.AppHandle.GetConf("config/" + *path)
 	router := gin.Default()
 	router.Static("/assets", "./view")
 	router.StaticFile("/favicon.ico", "./view/image/favicon.ico")
@@ -46,5 +48,5 @@ func main() {
 	{
 		video.GET("/list", cvideo.GetVideoList)
 	}
-	router.Run(":4010")
+	router.Run(":" + config.AppHandle.Host.Port)
 }

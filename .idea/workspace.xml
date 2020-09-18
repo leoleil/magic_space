@@ -2,15 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f11f8579-7f87-4c31-a9c5-5bcf154ce9bf" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/common/encrypt/encrypt.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/config/config.go" beforeDir="false" afterPath="$PROJECT_DIR$/common/config/config.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/app.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/app_local.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config/app_local.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller/asd/asd.go" beforeDir="false" afterPath="$PROJECT_DIR$/controller/casd/casd.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controller/casd/casd.go" beforeDir="false" afterPath="$PROJECT_DIR$/controller/casd/casd.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/module/user/user.go" beforeDir="false" afterPath="$PROJECT_DIR$/module/user/user.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/asd/asd.go" beforeDir="false" afterPath="$PROJECT_DIR$/service/sasd/sasd.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/sasd/sasd.go" beforeDir="false" afterPath="$PROJECT_DIR$/service/sasd/sasd.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/js/sign-in.js" beforeDir="false" afterPath="$PROJECT_DIR$/view/js/sign-in.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,6 +71,7 @@
     <configuration name="go build github.com/leoleil/magic_space" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="magic_space" />
       <working_directory value="$PROJECT_DIR$/" />
+      <parameters value="-config app_local.yml" />
       <kind value="PACKAGE" />
       <filePath value="$PROJECT_DIR$/main.go" />
       <package value="github.com/leoleil/magic_space" />
@@ -88,6 +87,10 @@
       <directory value="$PROJECT_DIR$/" />
       <method v="2" />
     </configuration>
+    <list>
+      <item itemvalue="Go Build.go build github.com/leoleil/magic_space" />
+      <item itemvalue="Go Build.go build magic_space" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="Go Build.go build github.com/leoleil/magic_space" />
@@ -140,37 +143,59 @@
     <MESSAGE value="feat&lt;video&gt;:更新文本编辑器" />
     <MESSAGE value="feat&lt;blog&gt;:更新文本编辑器" />
     <MESSAGE value="feat&lt;blog&gt;:每页限制8行" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat&lt;blog&gt;:每页限制8行" />
+    <MESSAGE value="feat&lt;*&gt;:邮件验证" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat&lt;*&gt;:邮件验证" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="96" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1600423559212">
-      <screen x="0" y="0" width="1280" height="688" />
+    <state x="581" y="178" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1600427262310">
+      <screen x="0" y="0" width="1920" height="1032" />
     </state>
     <state x="96" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.688@0.0.1280.688" timestamp="1600423559212" />
-    <state x="250" y="0" key="CommitChangelistDialog2" timestamp="1595694017352">
+    <state x="581" y="178" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1032@0.0.1920.1032" timestamp="1600427262310" />
+    <state x="250" y="0" key="CommitChangelistDialog2" timestamp="1600423607181">
       <screen x="0" y="0" width="1280" height="688" />
     </state>
-    <state x="250" y="0" key="CommitChangelistDialog2/0.0.1280.688@0.0.1280.688" timestamp="1595694017352" />
+    <state x="250" y="0" key="CommitChangelistDialog2/0.0.1280.688@0.0.1280.688" timestamp="1600423607181" />
     <state x="121" y="57" key="DiffContextDialog" timestamp="1595693233869">
       <screen x="0" y="0" width="1280" height="688" />
     </state>
     <state x="121" y="57" key="DiffContextDialog/0.0.1280.688@0.0.1280.688" timestamp="1595693233869" />
-    <state width="1237" height="171" key="GridCell.Tab.0.bottom" timestamp="1600423422066">
-      <screen x="0" y="0" width="1280" height="688" />
+    <state width="1877" height="138" key="GridCell.Tab.0.bottom" timestamp="1600440500962">
+      <screen x="0" y="0" width="1920" height="1032" />
     </state>
     <state width="1237" height="171" key="GridCell.Tab.0.bottom/0.0.1280.688@0.0.1280.688" timestamp="1600423422066" />
-    <state width="1237" height="171" key="GridCell.Tab.0.center" timestamp="1600423422066">
-      <screen x="0" y="0" width="1280" height="688" />
+    <state width="1877" height="138" key="GridCell.Tab.0.bottom/0.0.1920.1032@0.0.1920.1032" timestamp="1600440500962" />
+    <state width="1877" height="138" key="GridCell.Tab.0.center" timestamp="1600440500962">
+      <screen x="0" y="0" width="1920" height="1032" />
     </state>
     <state width="1237" height="171" key="GridCell.Tab.0.center/0.0.1280.688@0.0.1280.688" timestamp="1600423422066" />
-    <state width="1237" height="171" key="GridCell.Tab.0.left" timestamp="1600423422065">
-      <screen x="0" y="0" width="1280" height="688" />
+    <state width="1877" height="138" key="GridCell.Tab.0.center/0.0.1920.1032@0.0.1920.1032" timestamp="1600440500962" />
+    <state width="1877" height="138" key="GridCell.Tab.0.left" timestamp="1600440500961">
+      <screen x="0" y="0" width="1920" height="1032" />
     </state>
     <state width="1237" height="171" key="GridCell.Tab.0.left/0.0.1280.688@0.0.1280.688" timestamp="1600423422065" />
-    <state width="1237" height="171" key="GridCell.Tab.0.right" timestamp="1600423422066">
-      <screen x="0" y="0" width="1280" height="688" />
+    <state width="1877" height="138" key="GridCell.Tab.0.left/0.0.1920.1032@0.0.1920.1032" timestamp="1600440500961" />
+    <state width="1877" height="138" key="GridCell.Tab.0.right" timestamp="1600440500962">
+      <screen x="0" y="0" width="1920" height="1032" />
     </state>
     <state width="1237" height="171" key="GridCell.Tab.0.right/0.0.1280.688@0.0.1280.688" timestamp="1600423422066" />
+    <state width="1877" height="138" key="GridCell.Tab.0.right/0.0.1920.1032@0.0.1920.1032" timestamp="1600440500962" />
+    <state width="1877" height="344" key="GridCell.Tab.1.bottom" timestamp="1600440368330">
+      <screen x="0" y="0" width="1920" height="1032" />
+    </state>
+    <state width="1877" height="344" key="GridCell.Tab.1.bottom/0.0.1920.1032@0.0.1920.1032" timestamp="1600440368330" />
+    <state width="1877" height="344" key="GridCell.Tab.1.center" timestamp="1600440368330">
+      <screen x="0" y="0" width="1920" height="1032" />
+    </state>
+    <state width="1877" height="344" key="GridCell.Tab.1.center/0.0.1920.1032@0.0.1920.1032" timestamp="1600440368330" />
+    <state width="1877" height="344" key="GridCell.Tab.1.left" timestamp="1600440368330">
+      <screen x="0" y="0" width="1920" height="1032" />
+    </state>
+    <state width="1877" height="344" key="GridCell.Tab.1.left/0.0.1920.1032@0.0.1920.1032" timestamp="1600440368329" />
+    <state width="1877" height="344" key="GridCell.Tab.1.right" timestamp="1600440368330">
+      <screen x="0" y="0" width="1920" height="1032" />
+    </state>
+    <state width="1877" height="344" key="GridCell.Tab.1.right/0.0.1920.1032@0.0.1920.1032" timestamp="1600440368330" />
     <state x="233" y="78" key="Vcs.Push.Dialog.v2" timestamp="1595861902397">
       <screen x="0" y="0" width="1280" height="688" />
     </state>

@@ -15,7 +15,11 @@ import (
 func Authentication(username, password string) (key string, err error) {
 	user, err := asdDao.QueryUserByUsername(username)
 	if err != nil {
-		return
+		return key, errors.New("无效账号")
+	}
+	if !user.EmailCnf {
+		err = errors.New("账户未激活")
+		return key, err
 	}
 	if user.Psw == encrypt.GetMd5Key(password) {
 		onlyKey, _ := uuid.NewV4() // 生成秘钥
@@ -38,12 +42,22 @@ func SignIn(username, password, passwordAgain, mail string) error {
 	if strings.Compare(password, passwordAgain) != 0 {
 		return errors.New("两次输入密码不一致")
 	}
+	// 判断用户名的唯一性
+	if emailNums, confirm, err := asdDao.QueryUserConfirmByUser(username); err == nil {
+		if emailNums != 0 {
+			if !confirm {
+				return errors.New(username + "已被注册，请前往邮箱激活账号")
+			}
+			return errors.New(username + "已被注册")
+		}
+	}
 	// 判断是否邮箱已经被注册
 	if emailNums, confirm, err := asdDao.QueryUserConfirmByEmail(mail); err == nil {
-		if emailNums > 1 || confirm {
-			return errors.New("邮箱已被注册")
-		} else if emailNums == 1 && confirm {
-			return errors.New("邮箱已被注册")
+		if emailNums != 0 {
+			if !confirm {
+				return errors.New("邮箱" + mail + "已被注册，请前往邮箱激活账号")
+			}
+			return errors.New("邮箱" + mail + "已被注册")
 		}
 	}
 	if !senMailToUser(mail) {

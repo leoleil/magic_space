@@ -15,6 +15,7 @@ $(".login-submit").click(function () {
         },
         error: function (data) {
             console.log(data);
+            alert(data.responseJSON.msg)
         }
     });
 });
@@ -33,33 +34,16 @@ $(".signin-submit").click(function () {
         },
         success: function (data) {
             console.log(data);
-            setCookie("MCK",data.key,24 * 60 * 60);
+            alert("请前往邮箱激活账户")
             window.location.href = "/index";
         },
         error: function (data) {
             console.log(data);
+            alert(data.responseJSON.msg)
         }
     });
 });
-function login(){
-    username = $(".username").val();
-    password = $(".password").val();
-    $.ajax({type: "POST",
-        url: "/asd/login",
-        dataType: "json",
-        data: {
-            "username": username,
-            "password": password,
-        },
-        success: function (data) {
-            console.log(data);
-            window.location.href = "/index";
-        },
-        error: function (data) {
-            console.log(data);
-        }
-    });
-}
+
 function setCookie(name, value, seconds) {
     seconds = seconds || 0;   //seconds有值就直接赋值，没有为0，这个根php不一样。
     var expires = "";

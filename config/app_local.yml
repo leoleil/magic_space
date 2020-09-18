@@ -13,4 +13,4 @@ email:
   port: 465
 host:
   name: http://localhost
-  port: 4010
+  port: 4011

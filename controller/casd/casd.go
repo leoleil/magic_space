@@ -3,7 +3,6 @@ package casd
 import (
 	"github.com/gin-gonic/gin"
 	"github.com/leoleil/magic_space/common/utilities"
-	asdDao "github.com/leoleil/magic_space/module/user"
 	asdService "github.com/leoleil/magic_space/service/sasd"
 	"net/http"
 )
@@ -14,14 +13,7 @@ func Login(context *gin.Context) {
 	key, err := asdService.Authentication(username, psw)
 	if err != nil {
 		context.JSON(http.StatusExpectationFailed, gin.H{
-			"msg": "用户名或者密码不正确",
-		})
-		return
-	}
-	_, confirm, err := asdDao.QueryUserConfirmByUser(username)
-	if err != nil || !confirm {
-		context.JSON(http.StatusExpectationFailed, gin.H{
-			"msg": "检测用户邮箱注册状态失败",
+			"msg": err.Error(),
 		})
 		return
 	}
@@ -41,7 +33,7 @@ func SignIn(context *gin.Context) {
 	err := asdService.SignIn(username, password, passwordAgain, mail)
 	if err != nil {
 		context.JSON(http.StatusExpectationFailed, gin.H{
-			"msg": err,
+			"msg": err.Error(),
 		})
 		return
 	}
@@ -60,7 +52,7 @@ func Check(context *gin.Context) {
 	user, err := asdService.Authorization(key)
 	if err != nil {
 		context.JSON(http.StatusExpectationFailed, gin.H{
-			"msg": err,
+			"msg": err.Error(),
 		})
 		return
 	}
