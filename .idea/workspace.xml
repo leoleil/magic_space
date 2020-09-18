@@ -3,9 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="f11f8579-7f87-4c31-a9c5-5bcf154ce9bf" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller/cblog/cblog.go" beforeDir="false" afterPath="$PROJECT_DIR$/view/jquery-3.3.1/cblog.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/js/blog.js" beforeDir="false" afterPath="$PROJECT_DIR$/view/js/blog.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,7 +37,8 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="go.import.settings.migrated" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/view" />
+    <property name="go.tried.to.enable.integration.vgo.integrator" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/config" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -49,16 +47,17 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\leoleil\go\src\magic_space\templates" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\leoleil\go\src\github.com\leoleil\magic_space\config" />
       <recent name="C:\Users\leoleil\go\src\magic_space\view" />
       <recent name="C:\Users\leoleil\go\src\magic_space\view\js\tinymce\langs" />
       <recent name="C:\Users\leoleil\go\src\magic_space\view\js" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\leoleil\go\src\magic_space\templates" />
+    </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Go Test.TestSendToSomeConfirm in github.com/leoleil/magic_space/common/email">
     <configuration name="go build magic_space" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="magic_space" />
       <working_directory value="$PROJECT_DIR$/" />
@@ -68,8 +67,20 @@
       <directory value="$PROJECT_DIR$/" />
       <method v="2" />
     </configuration>
+    <configuration name="TestSendToSomeConfirm in github.com/leoleil/magic_space/common/email" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="magic_space" />
+      <working_directory value="$PROJECT_DIR$/common/email" />
+      <framework value="gotest" />
+      <kind value="PACKAGE" />
+      <package value="github.com/leoleil/magic_space/common/email" />
+      <directory value="$PROJECT_DIR$/" />
+      <filePath value="$PROJECT_DIR$/" />
+      <pattern value="^TestSendToSomeConfirm$" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Test.TestSendToSomeConfirm in github.com/leoleil/magic_space/common/email" />
         <item itemvalue="Go Build.go build magic_space" />
       </list>
     </recent_temporary>
@@ -116,49 +127,54 @@
     <MESSAGE value="feat&lt;video&gt;:更新页面文本" />
     <MESSAGE value="feat&lt;video&gt;:更新文本编辑器" />
     <MESSAGE value="feat&lt;blog&gt;:更新文本编辑器" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat&lt;blog&gt;:更新文本编辑器" />
+    <MESSAGE value="feat&lt;*&gt;:调整邮件验证" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat&lt;*&gt;:调整邮件验证" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="233" y="3" key="#GOROOT" timestamp="1589170473589">
+    <state x="233" y="3" key="#Go_Modules_(vgo)" timestamp="1600417927056">
       <screen x="0" y="0" width="1280" height="688" />
     </state>
-    <state x="233" y="3" key="#GOROOT/0.0.1280.688@0.0.1280.688" timestamp="1589170473589" />
-    <state x="250" y="0" key="CommitChangelistDialog2" timestamp="1595693600529">
+    <state x="233" y="3" key="#Go_Modules_(vgo)/0.0.1280.688@0.0.1280.688" timestamp="1600417927056" />
+    <state x="250" y="0" key="CommitChangelistDialog2" timestamp="1600417813678">
       <screen x="0" y="0" width="1280" height="688" />
     </state>
-    <state x="250" y="0" key="CommitChangelistDialog2/0.0.1280.688@0.0.1280.688" timestamp="1595693600529" />
-    <state x="121" y="57" key="DiffContextDialog" timestamp="1595693233869">
+    <state x="250" y="0" key="CommitChangelistDialog2/0.0.1280.688@0.0.1280.688" timestamp="1600417813678" />
+    <state x="121" y="57" width="1024" height="577" key="DiffContextDialog" timestamp="1600417927451">
       <screen x="0" y="0" width="1280" height="688" />
     </state>
-    <state x="121" y="57" key="DiffContextDialog/0.0.1280.688@0.0.1280.688" timestamp="1595693233869" />
-    <state width="1237" height="166" key="GridCell.Tab.0.bottom" timestamp="1595693918831">
+    <state x="121" y="57" width="1024" height="577" key="DiffContextDialog/0.0.1280.688@0.0.1280.688" timestamp="1600417927451" />
+    <state width="1237" height="171" key="GridCell.Tab.0.bottom" timestamp="1600415478649">
       <screen x="0" y="0" width="1280" height="688" />
     </state>
-    <state width="1237" height="166" key="GridCell.Tab.0.bottom/0.0.1280.688@0.0.1280.688" timestamp="1595693918831" />
-    <state width="1237" height="166" key="GridCell.Tab.0.center" timestamp="1595693918830">
+    <state width="1237" height="171" key="GridCell.Tab.0.bottom/0.0.1280.688@0.0.1280.688" timestamp="1600415478649" />
+    <state width="1237" height="171" key="GridCell.Tab.0.center" timestamp="1600415478649">
       <screen x="0" y="0" width="1280" height="688" />
     </state>
-    <state width="1237" height="166" key="GridCell.Tab.0.center/0.0.1280.688@0.0.1280.688" timestamp="1595693918830" />
-    <state width="1237" height="166" key="GridCell.Tab.0.left" timestamp="1595693918830">
+    <state width="1237" height="171" key="GridCell.Tab.0.center/0.0.1280.688@0.0.1280.688" timestamp="1600415478649" />
+    <state width="1237" height="171" key="GridCell.Tab.0.left" timestamp="1600415478648">
       <screen x="0" y="0" width="1280" height="688" />
     </state>
-    <state width="1237" height="166" key="GridCell.Tab.0.left/0.0.1280.688@0.0.1280.688" timestamp="1595693918830" />
-    <state width="1237" height="166" key="GridCell.Tab.0.right" timestamp="1595693918831">
+    <state width="1237" height="171" key="GridCell.Tab.0.left/0.0.1280.688@0.0.1280.688" timestamp="1600415478648" />
+    <state width="1237" height="171" key="GridCell.Tab.0.right" timestamp="1600415478649">
       <screen x="0" y="0" width="1280" height="688" />
     </state>
-    <state width="1237" height="166" key="GridCell.Tab.0.right/0.0.1280.688@0.0.1280.688" timestamp="1595693918831" />
+    <state width="1237" height="171" key="GridCell.Tab.0.right/0.0.1280.688@0.0.1280.688" timestamp="1600415478649" />
     <state x="233" y="78" key="Vcs.Push.Dialog.v2" timestamp="1595693644346">
       <screen x="0" y="0" width="1280" height="688" />
     </state>
     <state x="233" y="78" key="Vcs.Push.Dialog.v2/0.0.1280.688@0.0.1280.688" timestamp="1595693644346" />
+    <state x="299" y="79" key="VcsDiffUtil.ChangesDialog" timestamp="1600415047087">
+      <screen x="0" y="0" width="1280" height="688" />
+    </state>
+    <state x="299" y="79" key="VcsDiffUtil.ChangesDialog/0.0.1280.688@0.0.1280.688" timestamp="1600415047087" />
     <state x="437" y="262" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1595693609923">
       <screen x="0" y="0" width="1280" height="688" />
     </state>
     <state x="437" y="262" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1280.688@0.0.1280.688" timestamp="1595693609923" />
-    <state x="354" y="136" key="git4idea.merge.GitPullDialog" timestamp="1589170764255">
+    <state x="381" y="136" key="git4idea.merge.GitMergeDialog" timestamp="1600417906623">
       <screen x="0" y="0" width="1280" height="688" />
     </state>
-    <state x="354" y="136" key="git4idea.merge.GitPullDialog/0.0.1280.688@0.0.1280.688" timestamp="1589170764255" />
+    <state x="381" y="136" key="git4idea.merge.GitMergeDialog/0.0.1280.688@0.0.1280.688" timestamp="1600417906623" />
     <state x="303" y="9" width="672" height="678" key="search.everywhere.popup" timestamp="1595343377953">
       <screen x="0" y="0" width="1280" height="688" />
     </state>
