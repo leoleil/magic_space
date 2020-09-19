@@ -3,12 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="f11f8579-7f87-4c31-a9c5-5bcf154ce9bf" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/app_local.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config/app_local.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller/casd/casd.go" beforeDir="false" afterPath="$PROJECT_DIR$/controller/casd/casd.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module/user/user.go" beforeDir="false" afterPath="$PROJECT_DIR$/module/user/user.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/sasd/sasd.go" beforeDir="false" afterPath="$PROJECT_DIR$/service/sasd/sasd.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/js/sign-in.js" beforeDir="false" afterPath="$PROJECT_DIR$/view/js/sign-in.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controller/index/index.go" beforeDir="false" afterPath="$PROJECT_DIR$/controller/index/index.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,14 +52,14 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\leoleil\go\src\magic_space\view\jquery-3.3.1" />
+      <recent name="C:\Users\leoleil\go\src\magic_space\templates" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\leoleil\go\src\magic_space\view" />
       <recent name="C:\Users\leoleil\go\src\magic_space\view\js\tinymce\langs" />
       <recent name="C:\Users\leoleil\go\src\magic_space\view\js" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\leoleil\go\src\magic_space\view\jquery-3.3.1" />
-      <recent name="C:\Users\leoleil\go\src\magic_space\templates" />
     </key>
   </component>
   <component name="RunManager" selected="Go Build.go build github.com/leoleil/magic_space">
@@ -160,46 +155,47 @@
       <screen x="0" y="0" width="1280" height="688" />
     </state>
     <state x="121" y="57" key="DiffContextDialog/0.0.1280.688@0.0.1280.688" timestamp="1595693233869" />
-    <state width="1877" height="138" key="GridCell.Tab.0.bottom" timestamp="1600440500962">
+    <state width="1877" height="344" key="GridCell.Tab.0.bottom" timestamp="1600443447417">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
     <state width="1237" height="171" key="GridCell.Tab.0.bottom/0.0.1280.688@0.0.1280.688" timestamp="1600423422066" />
-    <state width="1877" height="138" key="GridCell.Tab.0.bottom/0.0.1920.1032@0.0.1920.1032" timestamp="1600440500962" />
-    <state width="1877" height="138" key="GridCell.Tab.0.center" timestamp="1600440500962">
+    <state width="1877" height="344" key="GridCell.Tab.0.bottom/0.0.1920.1032@0.0.1920.1032" timestamp="1600443447417" />
+    <state width="1877" height="344" key="GridCell.Tab.0.center" timestamp="1600443447417">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
     <state width="1237" height="171" key="GridCell.Tab.0.center/0.0.1280.688@0.0.1280.688" timestamp="1600423422066" />
-    <state width="1877" height="138" key="GridCell.Tab.0.center/0.0.1920.1032@0.0.1920.1032" timestamp="1600440500962" />
-    <state width="1877" height="138" key="GridCell.Tab.0.left" timestamp="1600440500961">
+    <state width="1877" height="344" key="GridCell.Tab.0.center/0.0.1920.1032@0.0.1920.1032" timestamp="1600443447417" />
+    <state width="1877" height="344" key="GridCell.Tab.0.left" timestamp="1600443447416">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
     <state width="1237" height="171" key="GridCell.Tab.0.left/0.0.1280.688@0.0.1280.688" timestamp="1600423422065" />
-    <state width="1877" height="138" key="GridCell.Tab.0.left/0.0.1920.1032@0.0.1920.1032" timestamp="1600440500961" />
-    <state width="1877" height="138" key="GridCell.Tab.0.right" timestamp="1600440500962">
+    <state width="1877" height="344" key="GridCell.Tab.0.left/0.0.1920.1032@0.0.1920.1032" timestamp="1600443447416" />
+    <state width="1877" height="344" key="GridCell.Tab.0.right" timestamp="1600443447417">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
     <state width="1237" height="171" key="GridCell.Tab.0.right/0.0.1280.688@0.0.1280.688" timestamp="1600423422066" />
-    <state width="1877" height="138" key="GridCell.Tab.0.right/0.0.1920.1032@0.0.1920.1032" timestamp="1600440500962" />
-    <state width="1877" height="344" key="GridCell.Tab.1.bottom" timestamp="1600440368330">
+    <state width="1877" height="344" key="GridCell.Tab.0.right/0.0.1920.1032@0.0.1920.1032" timestamp="1600443447417" />
+    <state width="1877" height="344" key="GridCell.Tab.1.bottom" timestamp="1600443447417">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
-    <state width="1877" height="344" key="GridCell.Tab.1.bottom/0.0.1920.1032@0.0.1920.1032" timestamp="1600440368330" />
-    <state width="1877" height="344" key="GridCell.Tab.1.center" timestamp="1600440368330">
+    <state width="1877" height="344" key="GridCell.Tab.1.bottom/0.0.1920.1032@0.0.1920.1032" timestamp="1600443447417" />
+    <state width="1877" height="344" key="GridCell.Tab.1.center" timestamp="1600443447417">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
-    <state width="1877" height="344" key="GridCell.Tab.1.center/0.0.1920.1032@0.0.1920.1032" timestamp="1600440368330" />
-    <state width="1877" height="344" key="GridCell.Tab.1.left" timestamp="1600440368330">
+    <state width="1877" height="344" key="GridCell.Tab.1.center/0.0.1920.1032@0.0.1920.1032" timestamp="1600443447417" />
+    <state width="1877" height="344" key="GridCell.Tab.1.left" timestamp="1600443447417">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
-    <state width="1877" height="344" key="GridCell.Tab.1.left/0.0.1920.1032@0.0.1920.1032" timestamp="1600440368329" />
-    <state width="1877" height="344" key="GridCell.Tab.1.right" timestamp="1600440368330">
+    <state width="1877" height="344" key="GridCell.Tab.1.left/0.0.1920.1032@0.0.1920.1032" timestamp="1600443447417" />
+    <state width="1877" height="344" key="GridCell.Tab.1.right" timestamp="1600443447417">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
-    <state width="1877" height="344" key="GridCell.Tab.1.right/0.0.1920.1032@0.0.1920.1032" timestamp="1600440368330" />
-    <state x="233" y="78" key="Vcs.Push.Dialog.v2" timestamp="1595861902397">
-      <screen x="0" y="0" width="1280" height="688" />
+    <state width="1877" height="344" key="GridCell.Tab.1.right/0.0.1920.1032@0.0.1920.1032" timestamp="1600443447417" />
+    <state x="350" y="117" key="Vcs.Push.Dialog.v2" timestamp="1600440819865">
+      <screen x="0" y="0" width="1920" height="1032" />
     </state>
     <state x="233" y="78" key="Vcs.Push.Dialog.v2/0.0.1280.688@0.0.1280.688" timestamp="1595861902397" />
+    <state x="350" y="117" key="Vcs.Push.Dialog.v2/0.0.1920.1032@0.0.1920.1032" timestamp="1600440819865" />
     <state x="437" y="262" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1595861685016">
       <screen x="0" y="0" width="1280" height="688" />
     </state>

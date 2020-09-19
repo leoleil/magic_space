@@ -2,6 +2,7 @@ package index
 
 import (
 	"github.com/gin-gonic/gin"
+	"github.com/leoleil/magic_space/common/config"
 	"github.com/leoleil/magic_space/service/sblog"
 	"strconv"
 )
@@ -63,7 +64,7 @@ func LoadVideo(context *gin.Context) {
 }
 func LoadVideoOpen(context *gin.Context) {
 	name := context.DefaultQuery("video", "")
-	video := "http://47.94.87.121/video/" + name
+	video := config.AppHandle.Host.Name + ":8080/" + name
 	context.HTML(200, "video-open.html", gin.H{
 		"title": "MC Space",
 		"video": video,
