@@ -2,8 +2,8 @@ package index
 
 import (
 	"github.com/gin-gonic/gin"
-	"github.com/leoleil/magic_space/common/config"
-	"github.com/leoleil/magic_space/service/sblog"
+	"github.com/magic_space/common/config"
+	"github.com/magic_space/service/sblog"
 	"strconv"
 )
 

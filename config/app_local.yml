@@ -1,7 +1,7 @@
 mysql:
   user: root
-  pwd: root
-  host: 47.94.87.121
+  pwd: '@QQ219zoing'
+  host: localhost
   port: 3306
   dbname: magic_space
 video:

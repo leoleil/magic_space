@@ -1,9 +1,9 @@
 package simg
 
 import (
+	"github.com/magic_space/module/img"
+	"github.com/magic_space/module/user"
 	"io"
-	"github.com/leoleil/magic_space/module/img"
-	"github.com/leoleil/magic_space/module/user"
 	"mime/multipart"
 	"os"
 	"strconv"

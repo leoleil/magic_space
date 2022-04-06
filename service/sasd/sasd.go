@@ -2,10 +2,10 @@ package sasd
 
 import (
 	"errors"
-	"github.com/leoleil/magic_space/common/config"
-	"github.com/leoleil/magic_space/common/email"
-	"github.com/leoleil/magic_space/common/encrypt"
-	asdDao "github.com/leoleil/magic_space/module/user"
+	"github.com/magic_space/common/config"
+	"github.com/magic_space/common/email"
+	"github.com/magic_space/common/encrypt"
+	asdDao "github.com/magic_space/module/user"
 	uuid "github.com/satori/go.uuid"
 	"log"
 	"strings"

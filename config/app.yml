@@ -1,7 +1,7 @@
 mysql:
   user: root
-  pwd: root
-  host: 47.94.87.121
+  pwd: '@QQ219zoing'
+  host: 10.0.4.3:3306
   port: 3306
   dbname: magic_space
 video:
@@ -12,5 +12,5 @@ email:
   host: smtp.163.com
   port: 465
 host:
-  name: http://www.mcspace.icu
+  name: https://www.mcspace.xyz
   port: 4010

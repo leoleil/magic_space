@@ -2,9 +2,9 @@ package cblog
 
 import (
 	"github.com/gin-gonic/gin"
-	"github.com/leoleil/magic_space/common/utilities"
-	"github.com/leoleil/magic_space/service/sblog"
-	"github.com/leoleil/magic_space/service/simg"
+	"github.com/magic_space/common/utilities"
+	"github.com/magic_space/service/sblog"
+	"github.com/magic_space/service/simg"
 	"net/http"
 	"strconv"
 )

@@ -3,7 +3,7 @@ package email
 import (
 	"encoding/base64"
 	"fmt"
-	"github.com/leoleil/magic_space/common/config"
+	"github.com/magic_space/common/config"
 	"gopkg.in/gomail.v2"
 	"log"
 	"strconv"

@@ -1,8 +1,8 @@
 package sblog
 
 import (
-	"github.com/leoleil/magic_space/module/blog"
-	"github.com/leoleil/magic_space/module/user"
+	"github.com/magic_space/module/blog"
+	"github.com/magic_space/module/user"
 )
 
 func UploadBlog(title, body, key string) (err error) {

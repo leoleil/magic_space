@@ -3,11 +3,11 @@ package main
 import (
 	"flag"
 	"github.com/gin-gonic/gin"
-	"github.com/leoleil/magic_space/common/config"
-	"github.com/leoleil/magic_space/controller/casd"
-	"github.com/leoleil/magic_space/controller/cblog"
-	"github.com/leoleil/magic_space/controller/cvideo"
-	"github.com/leoleil/magic_space/controller/index"
+	"github.com/magic_space/common/config"
+	"github.com/magic_space/controller/casd"
+	"github.com/magic_space/controller/cblog"
+	"github.com/magic_space/controller/cvideo"
+	"github.com/magic_space/controller/index"
 )
 
 var path = flag.String("config", "app.yml", "-config app.yml")

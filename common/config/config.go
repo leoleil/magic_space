@@ -34,6 +34,7 @@ type App struct {
 }
 
 func (c *App) GetConf(path string) *App {
+	fmt.Println(path)
 	yamlFile, err := ioutil.ReadFile(path)
 	if err != nil {
 		fmt.Println(err.Error())

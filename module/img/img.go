@@ -3,7 +3,7 @@ package img
 import (
 	"errors"
 	"fmt"
-	"github.com/leoleil/magic_space/common/database"
+	"github.com/magic_space/common/database"
 )
 
 type ImgEntity struct {

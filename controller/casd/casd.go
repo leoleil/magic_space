@@ -2,8 +2,8 @@ package casd
 
 import (
 	"github.com/gin-gonic/gin"
-	"github.com/leoleil/magic_space/common/utilities"
-	asdService "github.com/leoleil/magic_space/service/sasd"
+	"github.com/magic_space/common/utilities"
+	asdService "github.com/magic_space/service/sasd"
 	"net/http"
 )
 

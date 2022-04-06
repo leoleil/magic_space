@@ -1,7 +1,7 @@
 package user
 
 import (
-	"github.com/leoleil/magic_space/common/config"
+	"github.com/magic_space/common/config"
 	"github.com/stretchr/testify/assert"
 
 	//"github.com/stretchr/testify/assert"
