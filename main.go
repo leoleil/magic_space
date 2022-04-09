@@ -56,5 +56,8 @@ func main() {
 	{
 		video.GET("/list", cvideo.GetVideoList)
 	}
-	router.Run(":" + config.AppHandle.Host.Port)
+	err := router.Run(":" + config.AppHandle.Host.Port)
+	if err != nil {
+		return
+	}
 }
