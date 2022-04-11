@@ -101,7 +101,7 @@ func InsertUser(username, password, email string) (err error) {
 		return
 	}
 	defer handle.CloseDB()
-	if handle.Insert("INSERT INTO ms_sys_user(`GMT_CREATE`, `GMT_MODIFIED`, `USERNAME`, `PSW`, `EMAIL`)VALUES(now(),now(),?,?,?)", username, password, email) {
+	if handle.Insert("INSERT INTO ms_sys_user(`GMT_CREATE`, `GMT_MODIFIED`, `USERNAME`, `PSW`, `EMAIL`, `email_cnf`)VALUES(now(),now(),?,?,?,0)", username, password, email) {
 		return nil
 	} else {
 		return errors.New("插入出错")

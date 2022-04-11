@@ -11,7 +11,7 @@ import (
 	"strings"
 )
 
-// 验证
+// Authentication 验证
 func Authentication(username, password string) (key string, err error) {
 	user, err := asdDao.QueryUserByUsername(username)
 	if err != nil {
@@ -32,12 +32,12 @@ func Authentication(username, password string) (key string, err error) {
 	}
 }
 
-// 授权
+// Authorization 授权
 func Authorization(key string) (user asdDao.MsSysUser, err error) {
 	return asdDao.QueryUserByKey(key)
 }
 
-// 注册
+// SignIn 注册
 func SignIn(username, password, passwordAgain, mail string) error {
 	if strings.Compare(password, passwordAgain) != 0 {
 		return errors.New("两次输入密码不一致")
@@ -67,7 +67,7 @@ func SignIn(username, password, passwordAgain, mail string) error {
 	return err
 }
 
-// 激活
+// Activation 激活
 func Activation(key, email string) error {
 	// 验证key
 	if key != encrypt.GetMd5Key(email+"mc space") {
@@ -93,8 +93,8 @@ func senMailToUser(mail string) bool {
 	// 邮件主题
 	subject := "MC Space 激活邮件"
 	emailEncode := encrypt.GetMd5Key(mail + "mc space")
-	url := config.AppHandle.Host.Name + ":" + config.AppHandle.Host.Port + "/asd/sign/confirm?key=" + emailEncode + "&email=" + mail
-	body := "你好! 请点击下方网址激活邮箱：" + url
+	url := config.AppHandle.Host.Name + "/asd/sign/confirm?key=" + emailEncode + "&email=" + mail
+	body := "你好! 请点击下方网址激活邮箱：\n" + url
 	err := email.SendMail(mailTo, subject, body)
 	if err != nil {
 		log.Println(err)
