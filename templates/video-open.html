@@ -18,7 +18,7 @@
     <![endif]-->
 </head>
 <body class="site-wrapper">
-<div class="container">
+<div class="container-fluid">
     <nav class="navbar navbar-inverse">
         <div class="container-fluid">
             <!-- Brand and toggle get grouped for better mobile display -->
@@ -46,15 +46,19 @@
         </div><!-- /.container-fluid -->
     </nav>
     <div class="row container">
-        <ol class="breadcrumb bg-primary" >
-            <li><a href="/video">Video</a></li>
-            <li class="active headline">{{.name}}</li>
-        </ol>
-        <p align="center">
-        <video id="video" class="video-js vjs-big-play-centered" controls data-setup="{}" preload="auto">
-            <source src="{{.video}}"></source>
-        </video>
-        </p>
+        <div class="col-lg-1 col-md-1"></div>
+        <div class="col-lg-10 col-md-10">
+            <ol class="breadcrumb bg-primary" >
+                <li><a href="/video">Video</a></li>
+                <li class="active headline">{{.name}}</li>
+            </ol>
+            <p align="center">
+                <video id="video" class="video-js vjs-big-play-centered" controls data-setup="{}" preload="auto">
+                    <source src="{{.video}}"></source>
+                </video>
+            </p>
+        </div>
+        <div class="col-lg-1 col-md-1"></div>
     </div>
 </div>
 

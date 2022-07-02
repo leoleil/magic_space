@@ -19,7 +19,7 @@
     <script src='/assets/js/tiny.js'></script>
 </head>
 <body>
-<div class="container">
+<div class="container-fluid">
     <nav class="navbar navbar-inverse">
         <div class="container-fluid">
             <!-- Brand and toggle get grouped for better mobile display -->
@@ -48,7 +48,8 @@
     </nav>
     <form action="/blog/upload" method="post" id="blog-form">
         <div class="row">
-            <div class="col-md-8">
+            <div class="col-md-1 col-lg-1"></div>
+            <div class="col-md-7 col-lg-7">
                 <ol class="breadcrumb">
                     <li><a href="/blog">Blog</a></li>
                     <li class="active">Edit</li>
@@ -61,7 +62,7 @@
                     <textarea id="mytextarea" name="body"></textarea>
                 </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-3 col-lg-3">
                 <div class="thumbnail">
                     <div class="jumbotron">
                         <p>Add your title</p>
@@ -72,6 +73,7 @@
                     </div>
                 </div>
             </div>
+            <div class="col-md-1 col-lg-1"></div>
 
         </div>
     </form>
