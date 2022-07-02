@@ -1,11 +1,12 @@
-$(function () {
-    // 验证用户登录情况
+
+TickFunc = function () {
     $.ajax({
         type: "POST",
         url: "/asd/check",
         dataType: "json",
         success: function (data) {
             console.log(data);
+            $(".navbar-right").empty();
             $(".navbar-right").append(
                 '<li class="dropdown">\n' +
                 '<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Add <span class="caret"></span></a>\n' +
@@ -20,9 +21,14 @@ $(function () {
         },
         error: function () {
             console.log("no");
+            $(".navbar-right").empty();
             $(".navbar-right").append(
                 '<li><a href="/join">Join Us</a></li>'
             );
         },
     });
+}
+$(function () {
+    TickFunc();
+    setInterval(TickFunc, 30000);
 });

@@ -10,5 +10,5 @@ func GetKey(context *gin.Context) string {
 	return c.Value
 }
 func SetKey(context *gin.Context, key string) {
-	context.SetCookie("MCK", key, 1000, "", "", false, true)
+	context.SetCookie("MCK", key, 300, "", "mcspace.xyz", false, true)
 }

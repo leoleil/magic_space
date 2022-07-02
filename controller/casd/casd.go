@@ -17,7 +17,7 @@ func Login(context *gin.Context) {
 		})
 		return
 	}
-	//utilities.SetKey(context,key)
+	utilities.SetKey(context, key)
 	context.JSON(http.StatusOK, gin.H{
 		"msg":      "登录成功",
 		"key":      key,
@@ -56,6 +56,7 @@ func Check(context *gin.Context) {
 		})
 		return
 	}
+	utilities.SetKey(context, key)
 	context.JSON(http.StatusOK, gin.H{
 		"msg":      "验证成功",
 		"key":      key,
