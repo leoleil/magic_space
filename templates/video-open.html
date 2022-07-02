@@ -47,7 +47,7 @@
     </nav>
     <div class="row container">
         <div class="col-lg-1 col-md-1"></div>
-        <div class="col-lg-10 col-md-10">
+        <div class="col-lg-7 col-md-7">
             <ol class="breadcrumb bg-primary" >
                 <li><a href="/video">Video</a></li>
                 <li class="active headline">{{.name}}</li>
@@ -57,6 +57,9 @@
                     <source src="{{.video}}"></source>
                 </video>
             </p>
+        </div>
+        <div class="col-lg-3 col-md-3">
+            <div class="list-group" id="video_list"></div>
         </div>
         <div class="col-lg-1 col-md-1"></div>
     </div>
@@ -70,5 +73,6 @@
 <link href="/assets/css/video.css" rel="stylesheet">
 <script src="/assets/video7.4.1/js/video.min.js"></script>
 <script src="/assets/js/mc-base.js"></script>
+<script src="/assets/js/video.js"></script>
 </body>
 </html>
