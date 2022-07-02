@@ -1,31 +1,16 @@
-
-@media (max-width: @screen-xs-max) {
-    #video{
-        width: 300px;
-        height: 200px;
-    }
-}
-@media (min-width: @screen-sm-min) and (max-width: @screen-sm-max) {
-    #video{
-        width: 360px;
-        height: 240px;
-    }
-}
-@media (min-width: @screen-md-min) and (max-width: @screen-md-max) {
+@media(min-width:992px){
     #video{
         width: 560px;
         height: 374px;
     }
-    #video-list{
-        height: 300px;
-        overflow-y: auto;
+}
+@media(max-width:768px){
+    #video{
+        width: 368px;
+        height: 240px;
     }
 }
-@media (min-width: @screen-lg-min) {
-    #video{
-        width: 660px;
-        height: 440px;
-    }
+@media(min-width:992px){
     #video-list{
         height: 300px;
         overflow-y: auto;
