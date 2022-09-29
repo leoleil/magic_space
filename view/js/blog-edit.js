@@ -62,6 +62,7 @@ $(function () {
                     formData.append('file', file, file.name );
                     xhr.send(formData);
                 },
+                toolbar_sticky: true,
             });
         },
         error: function () {
