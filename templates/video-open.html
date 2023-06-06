@@ -51,11 +51,12 @@
                 <li><a href="/video">Video</a></li>
                 <li class="active headline">{{.name}}</li>
             </ol>
-            <p align="center">
-                <video id="video" class="video-js vjs-big-play-centered" controls data-setup="{}" preload="auto">
+            <div class="embed-responsive embed-responsive-16by9">
+                <video id="video" class="embed-responsive-item video-js vjs-big-play-centered" controls data-setup="{}" preload="auto">
                     <source src="{{.video}}"></source>
+                    Your browser does not support the video tag.
                 </video>
-            </p>
+            </div>
         </div>
         <div class="col-lg-3 col-md-12">
             <h3 class="mt-3">Video List</h3>
